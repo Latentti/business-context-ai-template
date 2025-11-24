@@ -1,0 +1,1477 @@
+# Business Context Template for AI-Driven Development
+# TOGAF Phase B - Business Architecture
+# Version: 1.0
+# Purpose: Provide comprehensive business context for AI-assisted software development projects
+
+---
+## TEMPLATE USAGE INSTRUCTIONS
+
+# This template serves as an "AI pitch" - a structured business context document that enables
+# AI development tools (like BMad) to understand your business environment, objectives, and
+# constraints when developing software solutions.
+#
+# FILL IN ALL SECTIONS that are relevant to your business. Remove or mark as "N/A" sections
+# that don't apply. The more complete and accurate this context, the better AI can align
+# development work with your business objectives.
+#
+# This template follows TOGAF Business Architecture framework to ensure comprehensive coverage.
+
+---
+metadata:
+  document_type: "Business Context for AI Development"
+  document_version: "1.0"
+  company_name: "[Your Company Name]"
+  last_updated: "[YYYY-MM-DD]"
+  document_owner: "[Name and Role]"
+  review_frequency: "[e.g., Quarterly, Semi-annually]"
+  purpose: "Strategic business context for AI-assisted software development projects"
+
+---
+## 1. EXECUTIVE SUMMARY
+# Quick overview - the "elevator pitch" for AI to understand your business essence
+
+executive_summary:
+  company_name: "[Company Name]"
+  tagline: "[One-sentence description of what you do]"
+
+  founded:
+    year: "[Year founded]"
+    incorporated_year: "[Year incorporated if different]"
+
+  ownership_structure: "[e.g., Private, Public, Subsidiary of X, Partnership]"
+
+  market_position: "[Brief description of your market position and differentiation]"
+
+  key_metrics:
+    # Scale indicators - helps AI understand project scope context
+    annual_revenue: "[Revenue range or exact if public]"
+    employees: "[Number of employees]"
+    customers: "[Number of customers/users]"
+    locations: "[Number of locations/markets served]"
+    transactions_per_year: "[If applicable - volume indicators]"
+
+  competitive_advantage:
+    # Your unique selling proposition - what makes you different
+    core_differentiator: "[What fundamentally differentiates you from competitors]"
+    key_strengths:
+      - "[Strength 1 - e.g., Technology leadership, Market position, Customer relationships]"
+      - "[Strength 2]"
+      - "[Strength 3]"
+
+  vision_3_5_years: "[Where do you want to be in 3-5 years]"
+
+  mission_statement: "[Why does your company exist - your purpose]"
+
+---
+## 2. COMPANY PROFILE
+# Detailed company information - helps AI understand organizational context
+
+company_profile:
+  legal_information:
+    legal_name: "[Official legal company name]"
+    registration_number: "[Business ID if relevant]"
+    headquarters: "[City, Country]"
+    operating_countries:
+      - "[Country 1]"
+      - "[Country 2]"
+
+  organizational_structure:
+    leadership_team:
+      # Key decision makers and their domains
+      - role: "CEO / Managing Director"
+        name: "[Name]"
+        focus_areas: "[e.g., Strategy, Growth, Partnerships]"
+      - role: "CTO / Technical Director"
+        name: "[Name]"
+        focus_areas: "[e.g., Technology, Innovation, Architecture]"
+      - role: "[Other C-level roles]"
+        name: "[Name]"
+        focus_areas: "[Their domain]"
+
+    departments:
+      # Major organizational units
+      sales:
+        size: "[Number of people]"
+        focus: "[What they do, how they operate]"
+      marketing:
+        size: "[Number of people]"
+        focus: "[What they do, how they operate]"
+      technology:
+        size: "[Number of people]"
+        focus: "[What they do, how they operate]"
+      operations:
+        size: "[Number of people]"
+        focus: "[What they do, how they operate]"
+      # Add other relevant departments
+
+    external_resources:
+      consultants: "[Do you use consultants regularly? For what?]"
+      partners: "[Key strategic partners that affect operations]"
+      outsourced_functions: "[What functions are outsourced?]"
+
+  company_culture:
+    cultural_attributes:
+      - "[e.g., Startup mentality, Enterprise rigor, Customer-first, Innovation-driven]"
+      - "[Cultural attribute 2]"
+      - "[Cultural attribute 3]"
+
+    decision_making_style: "[e.g., Fast and agile, Consensus-driven, Data-driven, Top-down]"
+
+    innovation_approach: "[How do you approach innovation and risk?]"
+
+    work_style: "[Remote, Hybrid, Office-based, Distributed teams, etc.]"
+
+---
+## 3. BUSINESS HISTORY AND EVOLUTION
+# Context on how you got here - helps AI understand trajectory and transformation
+
+business_history:
+  founding_story: "[How and why was the company founded?]"
+
+  key_milestones:
+    - year: "[Year]"
+      event: "[Significant event - e.g., Founded, Major pivot, Key customer win]"
+      impact: "[Why this matters]"
+    - year: "[Year]"
+      event: "[Event]"
+      impact: "[Impact]"
+    # Add more milestones as needed
+
+  business_model_evolution:
+    original_model: "[What was the original business model?]"
+    current_model: "[What is the current business model?]"
+    transformation_drivers: "[What drove the evolution?]"
+
+  ownership_evolution:
+    # If ownership structure changed
+    changes:
+      - year: "[Year]"
+        change: "[e.g., Spun out from parent company, Acquired by X, IPO]"
+        implications: "[How this affects operations, strategy, autonomy]"
+
+  strategic_relationships:
+    # Important relationships that shape your business
+    parent_companies:
+      - name: "[Parent company name if applicable]"
+        relationship_type: "[Owner, Strategic investor, etc.]"
+        ownership_percentage: "[%]"
+        nature_of_relationship: "[How they interact with you - Owner, Customer, Partner, etc.]"
+
+    key_partnerships:
+      - partner: "[Partner name]"
+        relationship: "[Nature of partnership]"
+        strategic_importance: "[Why this matters]"
+
+---
+## 4. CORE BUSINESS AND VALUE PROPOSITION
+# What you do and why customers choose you - critical for AI to understand business logic
+
+core_business:
+  elevator_pitch: "[30-second description of what you do and for whom]"
+
+  value_proposition:
+    primary_value: "[The core value you deliver to customers]"
+
+    customer_benefits:
+      - benefit: "[Benefit 1]"
+        description: "[How you deliver this]"
+      - benefit: "[Benefit 2]"
+        description: "[How you deliver this]"
+      - benefit: "[Benefit 3]"
+        description: "[How you deliver this]"
+
+    why_customers_choose_you:
+      reason_1:
+        title: "[e.g., Adaptability, Technology leadership, Price]"
+        description: "[Explanation of this differentiator]"
+      reason_2:
+        title: "[Reason]"
+        description: "[Explanation]"
+      reason_3:
+        title: "[Reason]"
+        description: "[Explanation]"
+
+  business_model_canvas:
+    # How you create, deliver, and capture value
+
+    customer_segments:
+      # Who are your customers?
+      segment_1:
+        name: "[e.g., Enterprise B2B, SMB, B2C consumers]"
+        description: "[Describe this segment]"
+        size: "[Market size or customer count]"
+        characteristics: "[Key characteristics]"
+      # Add more segments
+
+    value_propositions:
+      # What value do you provide to each segment?
+      for_segment_1:
+        core_value: "[Primary value]"
+        pain_relievers: "[What problems you solve]"
+        gain_creators: "[What benefits you create]"
+      # Match to each customer segment
+
+    channels:
+      # How do you reach and communicate with customers?
+      acquisition_channels:
+        - "[Channel 1 - e.g., Direct sales, Online, Partners]"
+        - "[Channel 2]"
+      delivery_channels:
+        - "[How you deliver your product/service]"
+      support_channels:
+        - "[How customers get support]"
+
+    customer_relationships:
+      # How do you interact with customers?
+      relationship_type: "[e.g., Self-service, Personal assistance, Automated, Community]"
+      retention_strategy: "[How you keep customers]"
+
+    revenue_streams:
+      # How do you make money?
+      stream_1:
+        type: "[e.g., SaaS subscription, Transaction fees, License fees, Services]"
+        description: "[Details of this revenue stream]"
+        percentage_of_revenue: "[X% of total]"
+      stream_2:
+        type: "[Type]"
+        description: "[Details]"
+        percentage_of_revenue: "[X%]"
+      # Add all revenue streams
+
+    key_resources:
+      # What assets are critical to deliver value?
+      physical: "[Physical assets if relevant]"
+      intellectual: "[IP, data, algorithms, brand]"
+      human: "[Key skills and expertise]"
+      financial: "[Financial resources]"
+
+    key_activities:
+      # What do you do to deliver value?
+      - "[Activity 1 - e.g., Software development, Customer support, Data processing]"
+      - "[Activity 2]"
+      - "[Activity 3]"
+
+    key_partnerships:
+      # Who helps you deliver value?
+      - partner_type: "[e.g., Technology provider, Distribution partner]"
+        partners: "[Names or types]"
+        value: "[What they enable]"
+
+    cost_structure:
+      # What are your major costs?
+      cost_type: "[e.g., Fixed heavy, Variable heavy, Economies of scale, Economies of scope]"
+      major_costs:
+        - "[Cost category 1 - e.g., Personnel, Infrastructure, Marketing]"
+        - "[Cost category 2]"
+        - "[Cost category 3]"
+
+---
+## 5. PRODUCTS AND SERVICES
+# What you sell and deliver - helps AI understand solution context
+
+products_and_services:
+  platform_or_ecosystem:
+    # If you have an overarching platform
+    platform_name: "[Name of your core platform/ecosystem]"
+    platform_description: "[What the platform does]"
+    platform_architecture: "[e.g., Modular, Monolithic, Microservices, Composable]"
+
+  product_portfolio:
+    # List all major products/services
+
+    product_1:
+      name: "[Product/Service Name]"
+      category: "[e.g., SaaS Platform, Professional Services, Managed Service]"
+
+      description:
+        purpose: "[What problem does this solve?]"
+        target_users: "[Who uses this?]"
+        key_features:
+          - "[Feature 1]"
+          - "[Feature 2]"
+          - "[Feature 3]"
+
+      customer_segments:
+        # Which customer types use this?
+        - segment: "[Segment name]"
+          use_case: "[How they use it]"
+          value: "[Value they get]"
+
+      competitive_landscape:
+        competitors:
+          - "[Competitor 1]"
+          - "[Competitor 2]"
+        our_differentiation: "[How you differentiate]"
+
+      business_metrics:
+        # Product performance indicators
+        users: "[Number of users]"
+        revenue_contribution: "[% of revenue or absolute]"
+        growth_rate: "[Growth trajectory]"
+        strategic_importance: "[High/Medium/Low and why]"
+
+    # Repeat for each product/service
+
+  pricing_model:
+    # How do you price your offerings?
+    pricing_strategy: "[e.g., Value-based, Cost-plus, Competitive, Freemium, Tiered]"
+
+    pricing_tiers:
+      - tier: "[e.g., Basic, Professional, Enterprise]"
+        target: "[Who this is for]"
+        price_range: "[Price range]"
+        key_features: "[What's included]"
+
+  service_delivery_model:
+    delivery_method: "[e.g., Self-service SaaS, Managed service, On-premise, Hybrid]"
+    customer_onboarding: "[How customers start using your product]"
+    ongoing_support: "[Support model and SLAs]"
+
+  product_roadmap_direction:
+    # Where products are heading - high-level strategic direction
+    near_term_6_12_months:
+      - "[Initiative 1]"
+      - "[Initiative 2]"
+    medium_term_12_24_months:
+      - "[Initiative 1]"
+      - "[Initiative 2]"
+    long_term_24_plus_months:
+      - "[Strategic direction 1]"
+      - "[Strategic direction 2]"
+
+---
+## 6. CUSTOMER SEGMENTS AND MARKETS
+# Who buys from you and why - helps AI understand user context
+
+customer_segments:
+  segment_analysis:
+
+    segment_1:
+      segment_name: "[e.g., Enterprise B2B, Mid-market, SMB, B2C consumers]"
+      market_type: "[B2B, B2B2C, B2C, B2G]"
+
+      profile:
+        typical_customer: "[Description of typical customer in this segment]"
+        size_characteristics: "[e.g., 500+ employees, $50M+ revenue]"
+        industry_focus: "[Industries served]"
+        geographic_focus: "[Regions/countries]"
+
+      needs_and_pain_points:
+        primary_pain_points:
+          - "[Pain point 1]"
+          - "[Pain point 2]"
+          - "[Pain point 3]"
+        desired_outcomes:
+          - "[Outcome 1]"
+          - "[Outcome 2]"
+
+      how_we_solve:
+        solution_approach: "[How you address their needs]"
+        key_capabilities_needed:
+          - "[Capability 1]"
+          - "[Capability 2]"
+
+      buying_behavior:
+        decision_makers: "[Who makes purchase decisions]"
+        decision_criteria: "[What they evaluate]"
+        sales_cycle_length: "[Typical time to close]"
+        procurement_process: "[How they buy - e.g., RFP, direct, self-service]"
+
+      segment_metrics:
+        number_of_customers: "[Count]"
+        revenue_contribution: "[% of total revenue]"
+        customer_lifetime_value: "[CLTV if known]"
+        customer_acquisition_cost: "[CAC if known]"
+        churn_rate: "[Annual churn %]"
+
+      market_position:
+        market_share: "[Your position in this segment]"
+        strength: "[Strong/Growing/Challenged/Emerging]"
+        strategic_importance: "[High/Medium/Low]"
+
+    # Repeat for each significant customer segment
+
+  total_addressable_market:
+    current_market_size: "[Size of markets you currently serve]"
+    growth_rate: "[Market growth rate]"
+    target_market_size_3_5_years: "[Expansion potential]"
+
+  geographic_markets:
+    current_markets:
+      - market: "[Country/Region]"
+        strength: "[Strong/Growing/Emerging]"
+        revenue_contribution: "[%]"
+        strategic_importance: "[Why this market matters]"
+
+    expansion_plans:
+      - target_market: "[Country/Region]"
+        timeline: "[When]"
+        entry_strategy: "[How you plan to enter]"
+
+---
+## 7. COMPETITIVE LANDSCAPE
+# Who you compete with and how you win - helps AI understand competitive dynamics
+
+competitive_landscape:
+  market_structure:
+    market_type: "[e.g., Fragmented, Consolidated, Emerging, Mature]"
+    market_dynamics: "[Key dynamics - disruption, consolidation, regulation, etc.]"
+
+  competitor_analysis:
+    # Major competitors by segment or category
+
+    competitor_category_1:
+      category: "[e.g., Direct SaaS competitors, Traditional enterprise software]"
+      competitors:
+        - name: "[Competitor 1]"
+          strength: "[What they're good at]"
+          weakness: "[Where they're vulnerable]"
+          market_position: "[Leader/Challenger/Niche/Emerging]"
+        - name: "[Competitor 2]"
+          strength: "[What they're good at]"
+          weakness: "[Where they're vulnerable]"
+          market_position: "[Position]"
+
+    # Repeat for different competitive categories
+
+  our_differentiation:
+    core_differentiator: "[The fundamental way you differentiate]"
+
+    competitive_advantages:
+      advantage_1:
+        title: "[e.g., Technology superiority, Customer intimacy, Cost leadership]"
+        description: "[Detailed explanation]"
+        proof_points: "[Evidence - metrics, customer testimonials, capabilities]"
+        sustainability: "[Why this advantage is defensible]"
+      advantage_2:
+        title: "[Advantage]"
+        description: "[Explanation]"
+        proof_points: "[Evidence]"
+        sustainability: "[Defensibility]"
+
+  competitive_moats:
+    # Sustainable competitive advantages
+    - moat_type: "[e.g., Network effects, Data advantage, Brand, Patents, Switching costs]"
+      description: "[How this protects your business]"
+
+  threats_and_risks:
+    competitive_threats:
+      - threat: "[e.g., New entrant, Substitute product, Commoditization]"
+        likelihood: "[High/Medium/Low]"
+        impact: "[High/Medium/Low]"
+        mitigation: "[How you address this]"
+
+    market_risks:
+      - risk: "[e.g., Regulatory change, Technology disruption, Economic downturn]"
+        likelihood: "[High/Medium/Low]"
+        impact: "[High/Medium/Low]"
+        mitigation: "[How you address this]"
+
+---
+## 8. BUSINESS CAPABILITIES
+# What your business can do - helps AI understand current state and gaps
+# TOGAF Capability Model
+
+business_capabilities:
+  capability_assessment_approach: "[How you assess capabilities - maturity models, benchmarks, etc.]"
+
+  # Organize capabilities by domain
+
+  strategy_and_planning:
+    capabilities:
+      - capability: "Strategic Planning and Management"
+        description: "[What this capability entails]"
+        current_maturity: "[1-5, where 1=Initial, 5=Optimized]"
+        target_maturity: "[Desired level]"
+        importance: "[High/Medium/Low]"
+        gaps: "[What's missing or weak]"
+
+      - capability: "Innovation and Research"
+        description: "[What this entails]"
+        current_maturity: "[1-5]"
+        target_maturity: "[Level]"
+        importance: "[High/Medium/Low]"
+        gaps: "[Gaps]"
+
+  customer_and_market:
+    capabilities:
+      - capability: "Customer Relationship Management"
+        description: "[What this entails]"
+        current_maturity: "[1-5]"
+        target_maturity: "[Level]"
+        importance: "[High/Medium/Low]"
+        technology_enablement: "[What tech supports this]"
+        gaps: "[Gaps]"
+
+      - capability: "Marketing and Brand Management"
+        current_maturity: "[1-5]"
+        target_maturity: "[Level]"
+        importance: "[High/Medium/Low]"
+        gaps: "[Gaps]"
+
+      - capability: "Sales and Channel Management"
+        current_maturity: "[1-5]"
+        target_maturity: "[Level]"
+        importance: "[High/Medium/Low]"
+        gaps: "[Gaps]"
+
+  products_and_services:
+    capabilities:
+      - capability: "Product Development and Innovation"
+        description: "[What this entails]"
+        current_maturity: "[1-5]"
+        target_maturity: "[Level]"
+        importance: "[High/Medium/Low]"
+        gaps: "[Gaps]"
+
+      - capability: "Product Portfolio Management"
+        current_maturity: "[1-5]"
+        target_maturity: "[Level]"
+        importance: "[High/Medium/Low]"
+        gaps: "[Gaps]"
+
+  operations_and_delivery:
+    capabilities:
+      - capability: "Service Delivery and Operations"
+        description: "[What this entails]"
+        current_maturity: "[1-5]"
+        target_maturity: "[Level]"
+        importance: "[High/Medium/Low]"
+        gaps: "[Gaps]"
+
+      - capability: "Quality Management"
+        current_maturity: "[1-5]"
+        target_maturity: "[Level]"
+        importance: "[High/Medium/Low]"
+        gaps: "[Gaps]"
+
+  enabling_functions:
+    capabilities:
+      - capability: "Financial Management"
+        current_maturity: "[1-5]"
+        target_maturity: "[Level]"
+        importance: "[High/Medium/Low]"
+        gaps: "[Gaps]"
+
+      - capability: "Human Resources Management"
+        current_maturity: "[1-5]"
+        target_maturity: "[Level]"
+        importance: "[High/Medium/Low]"
+        gaps: "[Gaps]"
+
+      - capability: "Information Technology Management"
+        current_maturity: "[1-5]"
+        target_maturity: "[Level]"
+        importance: "[High/Medium/Low]"
+        gaps: "[Gaps]"
+
+      - capability: "Legal and Compliance"
+        current_maturity: "[1-5]"
+        target_maturity: "[Level]"
+        importance: "[High/Medium/Low]"
+        gaps: "[Gaps]"
+
+  # Add other capability domains as relevant
+
+  capability_heat_map_summary:
+    # High-level view of capability priorities
+    high_priority_investments:
+      # Capabilities that need urgent development
+      - capability: "[Capability name]"
+        reason: "[Why this is priority]"
+        expected_impact: "[Business impact]"
+
+    competitive_strengths:
+      # Capabilities that differentiate you
+      - capability: "[Capability name]"
+        why_strength: "[What makes this strong]"
+
+    potential_outsource:
+      # Capabilities that might be better handled externally
+      - capability: "[Capability name]"
+        rationale: "[Why consider outsourcing]"
+
+---
+## 9. KEY BUSINESS PROCESSES AND VALUE STREAMS
+# How work flows through your business - helps AI understand operational context
+
+business_processes:
+  # Define your critical end-to-end value streams
+
+  value_stream_1:
+    name: "[e.g., Customer Acquisition, Product Development, Order-to-Cash]"
+    description: "[What this value stream accomplishes]"
+
+    trigger: "[What initiates this value stream]"
+    outcome: "[What constitutes successful completion]"
+
+    stages:
+      - stage: "[Stage 1 name]"
+        description: "[What happens in this stage]"
+        key_activities:
+          - "[Activity 1]"
+          - "[Activity 2]"
+        involved_roles:
+          - "[Role 1]"
+          - "[Role 2]"
+        supporting_systems:
+          - "[System 1]"
+          - "[System 2]"
+        pain_points:
+          - "[Issue 1]"
+          - "[Issue 2]"
+
+      # Repeat for each stage
+
+    performance_metrics:
+      cycle_time: "[Current average time]"
+      cost_per_instance: "[Cost]"
+      quality_metrics: "[Error rate, rework, etc.]"
+      customer_satisfaction: "[Satisfaction score]"
+
+    improvement_opportunities:
+      - opportunity: "[Improvement area]"
+        impact: "[Expected benefit]"
+
+  # Repeat for each critical value stream
+
+  process_maturity:
+    documentation_level: "[Ad-hoc, Documented, Standardized, Optimized]"
+    automation_level: "[Manual, Partially automated, Highly automated]"
+    measurement_level: "[Not measured, Basic metrics, Comprehensive KPIs]"
+    improvement_culture: "[Reactive, Proactive, Continuous improvement]"
+
+---
+## 10. TECHNOLOGY LANDSCAPE
+# Your current technology environment - critical for AI to understand technical context
+
+technology_landscape:
+  technology_strategy:
+    strategic_direction: "[e.g., Cloud-first, Digital transformation, AI-powered, API-first]"
+    technology_principles:
+      - "[Principle 1 - e.g., Build vs buy philosophy, Open source preference]"
+      - "[Principle 2]"
+      - "[Principle 3]"
+
+  application_portfolio:
+    # Major systems and applications
+
+    core_business_systems:
+      - system_name: "[System name]"
+        category: "[e.g., CRM, ERP, Custom platform, Marketing automation]"
+        vendor_or_custom: "[Vendor name or 'Custom built']"
+        version: "[Version if relevant]"
+        business_functions: "[What business capabilities this supports]"
+        users: "[Who uses this]"
+        integration_criticality: "[High/Medium/Low]"
+        technical_health: "[Modern/Adequate/Legacy/Technical debt]"
+
+    # Repeat for all significant systems
+
+  technical_architecture:
+    architecture_style: "[e.g., Microservices, Monolithic, Event-driven, Serverless, Hybrid]"
+
+    infrastructure:
+      hosting_model: "[Cloud, On-premise, Hybrid]"
+      cloud_providers:
+        - provider: "[e.g., AWS, Azure, GCP]"
+          usage: "[What you use them for]"
+      deployment_model: "[e.g., Containerized, VM-based, Serverless]"
+
+    integration_approach:
+      integration_patterns:
+        - "[Pattern 1 - e.g., API-first, Event-driven, ESB, Point-to-point]"
+      api_strategy: "[RESTful, GraphQL, gRPC, etc.]"
+
+    data_architecture:
+      data_strategy: "[e.g., Centralized data warehouse, Data mesh, Lake house]"
+      primary_databases:
+        - type: "[e.g., PostgreSQL, MongoDB, etc.]"
+          use_case: "[What data is stored]"
+      data_integration: "[How data moves between systems]"
+
+  technology_differentiation:
+    # Technology capabilities that differentiate you
+    unique_tech_capabilities:
+      - capability: "[e.g., AI/ML in production, Real-time processing, Advanced automation]"
+        description: "[What makes this special]"
+        business_value: "[How this creates competitive advantage]"
+        maturity: "[Pilot, Production, Scaled, Industry-leading]"
+
+  technical_debt_and_challenges:
+    # Known technical issues and constraints
+    technical_debt_areas:
+      - area: "[e.g., Legacy system X, Integration complexity]"
+        impact: "[How this affects business]"
+        remediation_priority: "[High/Medium/Low]"
+
+    technology_constraints:
+      - constraint: "[e.g., Compliance requirements, Performance limitations]"
+        implication: "[How this affects solution options]"
+
+  technology_roadmap:
+    # Major technology initiatives
+    near_term:
+      - initiative: "[Initiative name]"
+        objective: "[What this will achieve]"
+        timeline: "[When]"
+    medium_term:
+      - initiative: "[Initiative name]"
+        objective: "[What this will achieve]"
+        timeline: "[When]"
+
+---
+## 11. DATA AND ANALYTICS
+# Your data assets and how you use them - increasingly critical for AI solutions
+
+data_and_analytics:
+  data_as_strategic_asset:
+    data_strategy: "[How data creates value for your business]"
+
+    data_assets:
+      # Key data you own or control
+      asset_1:
+        data_type: "[e.g., Customer data, Transaction data, Behavioral data, Sensor data]"
+        description: "[What data you collect]"
+        volume: "[Scale - records, events, size]"
+        growth_rate: "[How fast it's growing]"
+        strategic_value: "[Why this data matters]"
+        data_quality: "[Current quality level]"
+
+      # Repeat for each major data asset
+
+  data_capabilities:
+    data_collection:
+      sources:
+        - "[Source 1 - e.g., Application events, IoT devices, User interactions]"
+      collection_methods: "[How data is captured]"
+      data_quality_processes: "[How you ensure quality]"
+
+    data_storage:
+      storage_platforms:
+        - platform: "[e.g., Data warehouse, Data lake, Operational databases]"
+          purpose: "[What's stored here]"
+
+    data_processing:
+      processing_capabilities:
+        - "[e.g., Real-time streaming, Batch processing, ETL pipelines]"
+      data_transformation: "[How data is prepared for use]"
+
+    analytics_and_intelligence:
+      analytics_maturity: "[Descriptive/Diagnostic/Predictive/Prescriptive]"
+
+      analytics_capabilities:
+        - capability: "[e.g., Business intelligence, Advanced analytics, Machine learning]"
+          description: "[What you can do]"
+          use_cases:
+            - "[Use case 1]"
+            - "[Use case 2]"
+
+      ai_ml_capabilities:
+        production_models:
+          - model_type: "[e.g., Demand forecasting, Customer segmentation, Fraud detection]"
+            description: "[What it does]"
+            business_impact: "[Value delivered]"
+            maturity: "[Pilot/Production/Optimized]"
+
+  data_governance:
+    data_ownership: "[How data ownership is defined]"
+    data_privacy_compliance: "[GDPR, CCPA, other regulations you comply with]"
+    data_security: "[How you protect data]"
+    data_retention: "[Retention policies]"
+
+  data_monetization:
+    # If you monetize data or plan to
+    current_monetization:
+      - approach: "[How you monetize - e.g., Data products, Insights as a service]"
+        value: "[Revenue or strategic value]"
+    potential_monetization:
+      - opportunity: "[Potential use of data]"
+        rationale: "[Why this is valuable]"
+
+---
+## 12. ORGANIZATIONAL OPERATING MODEL
+# How your organization works - helps AI understand workflow and decision-making
+
+operating_model:
+  model_type: "[e.g., Centralized, Decentralized, Federated, Matrix, Agile/Network]"
+
+  operating_model_characteristics:
+    standardization_level: "[High/Medium/Low - how standardized are processes]"
+    integration_level: "[High/Medium/Low - how integrated are operations]"
+    decision_authority: "[Centralized/Decentralized/Hybrid]"
+
+  organizational_design:
+    structure_type: "[e.g., Functional, Divisional, Matrix, Product-based, Team-based]"
+
+    major_organizational_units:
+      - unit: "[Business unit or department name]"
+        purpose: "[What this unit does]"
+        size: "[Number of people]"
+        autonomy_level: "[High/Medium/Low]"
+        key_responsibilities:
+          - "[Responsibility 1]"
+          - "[Responsibility 2]"
+
+  decision_rights:
+    strategic_decisions: "[Who makes strategic decisions and how]"
+    investment_decisions: "[Who approves investments and budgets]"
+    operational_decisions: "[Who makes day-to-day decisions]"
+    technology_decisions: "[Who decides on technology choices]"
+
+  collaboration_model:
+    cross_functional_collaboration: "[How teams work together across functions]"
+
+    governance_bodies:
+      - body: "[e.g., Executive team, Steering committee, Architecture board]"
+        purpose: "[What they govern]"
+        members: "[Who participates]"
+        decision_scope: "[What they decide]"
+        meeting_frequency: "[How often they meet]"
+
+  work_management:
+    methodology: "[e.g., Agile, Waterfall, Hybrid, SAFe, Scrum, Kanban]"
+    planning_cadence: "[How you plan work - sprints, quarters, etc.]"
+    prioritization_approach: "[How you prioritize work]"
+
+---
+## 13. STRATEGIC OBJECTIVES AND INITIATIVES
+# Where you're going - helps AI align development with strategic direction
+
+strategy:
+  strategic_planning_horizon:
+    near_term: "6-12 months"
+    medium_term: "12-24 months"
+    long_term: "24+ months"
+
+  strategic_objectives:
+    # Major strategic goals
+
+    objective_1:
+      objective: "[Strategic objective - e.g., Achieve market leadership in X]"
+      rationale: "[Why this objective]"
+      timeframe: "[When to achieve]"
+      success_metrics:
+        - metric: "[Metric 1]"
+          target: "[Target value]"
+        - metric: "[Metric 2]"
+          target: "[Target]"
+      key_initiatives:
+        - "[Initiative supporting this objective]"
+        - "[Initiative 2]"
+
+    # Repeat for each strategic objective
+
+  strategic_themes:
+    # Major strategic directions
+    - theme: "[e.g., Digital transformation, Market expansion, Product innovation]"
+      description: "[What this theme encompasses]"
+      priority: "[High/Medium/Low]"
+      investment_level: "[Significant/Moderate/Limited]"
+
+  transformation_initiatives:
+    # Major change programs
+
+    initiative_1:
+      initiative_name: "[Initiative name]"
+      objective: "[What you're trying to achieve]"
+      scope: "[What's included]"
+      timeline: "[Duration and key milestones]"
+
+      business_drivers:
+        - "[Driver 1]"
+        - "[Driver 2]"
+
+      expected_outcomes:
+        - outcome: "[Outcome 1]"
+          metric: "[How measured]"
+          target: "[Target value]"
+
+      dependencies:
+        - "[Dependency 1 - what must happen first or in parallel]"
+
+      risks:
+        - risk: "[Risk 1]"
+          mitigation: "[How you address it]"
+
+    # Repeat for each major initiative
+
+  growth_strategy:
+    growth_approach: "[Organic, Acquisition, Partnership, Hybrid]"
+
+    growth_vectors:
+      - vector: "[e.g., Geographic expansion, Product expansion, Customer segment expansion]"
+        description: "[How you'll grow]"
+        target: "[Growth target]"
+        timeline: "[When]"
+
+  innovation_strategy:
+    innovation_focus:
+      - "[Focus area 1 - e.g., Product innovation, Business model innovation, Process innovation]"
+
+    innovation_approach: "[How you innovate - internal R&D, acquisitions, partnerships, etc.]"
+
+    emerging_technologies:
+      - technology: "[e.g., AI/ML, Blockchain, IoT]"
+        relevance: "[Why this matters to your business]"
+        investment_stage: "[Exploring, Piloting, Scaling, Core]"
+
+---
+## 14. SUCCESS METRICS AND KPIs
+# How you measure success - helps AI understand what matters
+
+metrics_and_kpis:
+  # Organize metrics by category
+
+  financial_metrics:
+    - metric: "Annual Revenue"
+      current: "[Current value]"
+      target: "[Target value]"
+      trend: "[Growing/Stable/Declining]"
+
+    - metric: "Revenue Growth Rate"
+      current: "[Current %]"
+      target: "[Target %]"
+
+    - metric: "Gross Margin"
+      current: "[Current %]"
+      target: "[Target %]"
+
+    - metric: "Operating Margin / EBITDA"
+      current: "[Current %]"
+      target: "[Target %]"
+
+    # Add other relevant financial metrics
+
+  customer_metrics:
+    - metric: "Number of Customers"
+      current: "[Current count]"
+      target: "[Target]"
+
+    - metric: "Customer Acquisition Cost (CAC)"
+      current: "[Current value]"
+      target: "[Target]"
+
+    - metric: "Customer Lifetime Value (CLTV)"
+      current: "[Current value]"
+      target: "[Target]"
+
+    - metric: "Customer Satisfaction (NPS/CSAT)"
+      current: "[Current score]"
+      target: "[Target]"
+
+    - metric: "Customer Retention / Churn Rate"
+      current: "[Current %]"
+      target: "[Target %]"
+
+  operational_metrics:
+    - metric: "[e.g., Transaction Volume]"
+      current: "[Current volume]"
+      target: "[Target]"
+
+    - metric: "[e.g., System Uptime / Availability]"
+      current: "[Current %]"
+      target: "[Target %]"
+
+    - metric: "[e.g., Processing Time / Throughput]"
+      current: "[Current value]"
+      target: "[Target]"
+
+  product_metrics:
+    - metric: "Active Users (DAU/MAU)"
+      current: "[Current count]"
+      target: "[Target]"
+
+    - metric: "Feature Adoption Rate"
+      current: "[Current %]"
+      target: "[Target %]"
+
+    - metric: "Product Quality (bugs, incidents)"
+      current: "[Current value]"
+      target: "[Target]"
+
+  employee_metrics:
+    - metric: "Employee Satisfaction / Engagement"
+      current: "[Current score]"
+      target: "[Target]"
+
+    - metric: "Employee Turnover"
+      current: "[Current %]"
+      target: "[Target %]"
+
+  # Add other metric categories as relevant
+
+  metric_priorities:
+    north_star_metric: "[The ONE metric that matters most]"
+
+    critical_metrics:
+      # The 3-5 metrics you watch most closely
+      - metric: "[Metric name]"
+        why_critical: "[Why this is so important]"
+
+---
+## 15. CONSTRAINTS AND REQUIREMENTS
+# Boundaries and requirements AI must respect - critical for solution design
+
+constraints_and_requirements:
+  regulatory_and_compliance:
+    # Legal and regulatory requirements
+    regulations:
+      - regulation: "[e.g., GDPR, HIPAA, PCI-DSS, SOC 2, ISO 27001]"
+        applicability: "[How this applies to you]"
+        requirements:
+          - "[Requirement 1]"
+          - "[Requirement 2]"
+        implications: "[How this constrains solutions]"
+
+    industry_standards:
+      - standard: "[Industry standard you must follow]"
+        requirements: "[What this requires]"
+
+  security_requirements:
+    security_classification: "[e.g., High security, Regulated data, Public data]"
+
+    security_controls_required:
+      - control: "[e.g., Encryption at rest and in transit, MFA, Access controls]"
+        rationale: "[Why required]"
+
+    data_protection:
+      - requirement: "[e.g., PII protection, Data residency, Right to deletion]"
+        details: "[Specific requirements]"
+
+  performance_requirements:
+    - requirement_type: "[e.g., Response time, Throughput, Availability]"
+      specification: "[Specific requirement - e.g., 99.9% uptime, <200ms response]"
+      criticality: "[Must-have / Should-have / Nice-to-have]"
+
+  scalability_requirements:
+    current_scale: "[Current volume/load]"
+    expected_growth: "[Growth trajectory]"
+    scalability_needs: "[What must scale and how much]"
+
+  integration_requirements:
+    integration_constraints:
+      - constraint: "[e.g., Must integrate with System X, API limitations]"
+        details: "[Specific constraint]"
+
+    required_integrations:
+      - system: "[System name]"
+        integration_type: "[Real-time, Batch, Event-driven, API]"
+        criticality: "[Must-have / Should-have]"
+
+  budget_constraints:
+    budget_approach: "[How budgets are managed]"
+    budget_constraints: "[Any budget limitations relevant to projects]"
+
+  timeline_constraints:
+    typical_project_timelines: "[How long projects typically run]"
+    time_to_market_pressure: "[Low/Medium/High]"
+
+  technology_constraints:
+    technology_standards:
+      - standard: "[e.g., Must use certain tech stack, Cloud provider lock-in]"
+        rationale: "[Why this constraint]"
+
+    prohibited_technologies:
+      - technology: "[Technology or approach to avoid]"
+        reason: "[Why not allowed]"
+
+  organizational_constraints:
+    - constraint_type: "[e.g., Limited technical resources, Change management capacity]"
+      details: "[How this constrains projects]"
+
+  user_experience_requirements:
+    - requirement: "[e.g., Mobile-first, Accessibility WCAG 2.1, Multi-language]"
+      importance: "[Must-have / Should-have]"
+
+---
+## 16. STAKEHOLDERS AND DECISION MAKERS
+# Who needs to be involved - helps AI understand organizational dynamics
+
+stakeholders:
+  stakeholder_mapping:
+    # Key stakeholders and their interests
+
+    executive_stakeholders:
+      - name: "[Name]"
+        role: "[Title]"
+        interest: "[What they care about]"
+        influence_level: "[High/Medium/Low]"
+        decision_authority: "[What they can decide]"
+        communication_preference: "[How they like to be engaged]"
+
+    business_stakeholders:
+      - name: "[Name or role]"
+        role: "[Title/Function]"
+        interest: "[What they care about]"
+        influence_level: "[High/Medium/Low]"
+
+    technical_stakeholders:
+      - name: "[Name or role]"
+        role: "[Title/Function]"
+        interest: "[What they care about]"
+        influence_level: "[High/Medium/Low]"
+
+    external_stakeholders:
+      # Customers, partners, regulators if relevant
+      - name: "[Organization/Role]"
+        relationship: "[Customer, Partner, Regulator, etc.]"
+        interest: "[What they care about]"
+
+  decision_making_structure:
+    approval_hierarchy:
+      - decision_type: "[e.g., Strategic direction, Budget >$X, Architecture]"
+        decision_maker: "[Who decides]"
+        approval_process: "[How decisions are made]"
+
+  stakeholder_engagement_approach:
+    engagement_strategy: "[How you typically engage stakeholders on projects]"
+    communication_cadence: "[How often stakeholders are updated]"
+
+  change_management_considerations:
+    change_readiness: "[High/Medium/Low]"
+    change_fatigue: "[Low/Medium/High - is organization tired of change]"
+    change_champions: "[Who drives change in organization]"
+
+---
+## 17. PARTNERSHIPS AND ECOSYSTEM
+# Your business ecosystem - helps AI understand dependencies and opportunities
+
+partnerships_and_ecosystem:
+  ecosystem_strategy:
+    ecosystem_approach: "[How you leverage partners and ecosystem]"
+    partnership_philosophy: "[e.g., Strategic partnerships, Best-of-breed, Build vs partner]"
+
+  strategic_partnerships:
+    # Key strategic partners
+
+    partner_1:
+      partner_name: "[Partner organization]"
+      partnership_type: "[e.g., Technology partner, Distribution partner, Strategic investor]"
+
+      relationship_details:
+        nature: "[What the partnership entails]"
+        started: "[When partnership began]"
+        strategic_value: "[Why this partner is important]"
+
+      integration_level:
+        technical_integration: "[Tight/Moderate/Loose/None]"
+        business_integration: "[How businesses are integrated]"
+
+      dependencies:
+        - dependency: "[What you depend on them for]"
+          criticality: "[High/Medium/Low]"
+
+      joint_value_proposition:
+        customer_value: "[Value to customers from this partnership]"
+
+    # Repeat for each strategic partner
+
+  vendor_relationships:
+    # Major technology and service vendors
+
+    critical_vendors:
+      - vendor: "[Vendor name]"
+        service_provided: "[What they provide]"
+        criticality: "[High/Medium/Low - how critical to operations]"
+        contract_terms: "[Key terms if relevant to projects]"
+
+  customer_partnerships:
+    # Strategic customer relationships
+
+    lighthouse_customers:
+      - customer: "[Customer name if can be disclosed]"
+        industry: "[Their industry]"
+        partnership_nature: "[e.g., Co-development, Reference customer, Design partner]"
+        strategic_value: "[Why this customer relationship matters]"
+
+  ecosystem_opportunities:
+    # Future partnership or ecosystem opportunities
+    - opportunity: "[Potential partnership or ecosystem play]"
+      rationale: "[Why this would be valuable]"
+      status: "[Exploring, Negotiating, Planned]"
+
+---
+## 18. RISK FACTORS AND CHALLENGES
+# Risks and challenges - helps AI understand boundaries and priorities
+
+risks_and_challenges:
+  business_risks:
+    - risk: "[e.g., Customer concentration, Market disruption, Competitive threat]"
+      description: "[Details of the risk]"
+      likelihood: "[High/Medium/Low]"
+      impact: "[High/Medium/Low]"
+      mitigation_strategy: "[How you address this]"
+
+  operational_risks:
+    - risk: "[e.g., Key person dependency, System failure, Capacity constraints]"
+      description: "[Details]"
+      likelihood: "[High/Medium/Low]"
+      impact: "[High/Medium/Low]"
+      mitigation_strategy: "[How you address this]"
+
+  technology_risks:
+    - risk: "[e.g., Technical debt, Security breach, Technology obsolescence]"
+      description: "[Details]"
+      likelihood: "[High/Medium/Low]"
+      impact: "[High/Medium/Low]"
+      mitigation_strategy: "[How you address this]"
+
+  market_risks:
+    - risk: "[e.g., Regulatory change, Economic downturn, Market saturation]"
+      description: "[Details]"
+      likelihood: "[High/Medium/Low]"
+      impact: "[High/Medium/Low]"
+      mitigation_strategy: "[How you address this]"
+
+  current_challenges:
+    # Ongoing challenges that projects may need to address
+    - challenge: "[Current business challenge]"
+      impact: "[How this affects business]"
+      priority: "[High/Medium/Low]"
+      desired_resolution: "[What success looks like]"
+
+---
+## 19. CULTURAL AND ORGANIZATIONAL DYNAMICS
+# Organizational culture - helps AI understand change capacity and communication style
+
+organizational_culture:
+  cultural_assessment:
+    dominant_culture_type: "[e.g., Innovative, Operational excellence, Customer-centric, Results-driven]"
+
+    cultural_characteristics:
+      strengths:
+        - "[Cultural strength 1]"
+        - "[Cultural strength 2]"
+      challenges:
+        - "[Cultural challenge 1]"
+        - "[Cultural challenge 2]"
+
+  communication_style:
+    preferred_communication: "[e.g., Direct, Diplomatic, Data-driven, Story-driven]"
+    meeting_culture: "[e.g., Frequent meetings, Async-first, Decision-focused]"
+
+  innovation_culture:
+    risk_tolerance: "[High/Medium/Low]"
+    failure_acceptance: "[How mistakes are handled]"
+    innovation_encouragement: "[How innovation is fostered]"
+
+  collaboration_culture:
+    cross_team_collaboration: "[Easy/Moderate/Challenging]"
+    silo_level: "[Low/Medium/High - how siloed is organization]"
+
+  pace_and_urgency:
+    typical_pace: "[Fast-moving, Moderate, Measured]"
+    sense_of_urgency: "[High/Medium/Low]"
+
+  political_dynamics:
+    political_complexity: "[Low/Medium/High]"
+    key_dynamics: "[Any organizational dynamics to be aware of]"
+
+---
+## 20. AI DEVELOPMENT CONTEXT
+# Specific context for AI-driven development - meta section about how you work with AI
+
+ai_development_context:
+  ai_usage_maturity:
+    current_ai_adoption: "[How you currently use AI in development and business]"
+    ai_readiness: "[Low/Medium/High - readiness for AI-driven development]"
+
+  development_methodology:
+    approach: "[e.g., BMad, Traditional SDLC, Agile, Other AI-assisted approach]"
+
+    bmad_specific_context:
+      # If using BMad methodology
+      typical_project_types:
+        - "[Project type 1 - e.g., New feature development, System integration, Process automation]"
+
+      common_patterns:
+        - "[Common pattern 1 - recurring project patterns]"
+
+      reusable_components:
+        - "[Component 1 - things you reuse across projects]"
+
+  documentation_preferences:
+    documentation_style: "[Detailed/Moderate/Minimal]"
+    technical_depth_preference: "[Deep technical/Balanced/High-level]"
+
+  success_criteria_for_ai_development:
+    # What makes an AI-developed solution successful in your context
+    - criterion: "[e.g., Aligns with architecture standards, Meets performance targets]"
+      importance: "[High/Medium/Low]"
+
+  ai_interaction_preferences:
+    preferred_ai_role: "[e.g., Autonomous developer, Pair programmer, Code reviewer]"
+    human_review_requirements: "[What requires human review before implementation]"
+
+  common_project_patterns:
+    # Recurring project types that AI should understand
+    - pattern: "[e.g., Customer portal enhancements, Integration projects, Data migration]"
+      frequency: "[How often this occurs]"
+      typical_requirements:
+        - "[Requirement 1]"
+        - "[Requirement 2]"
+      typical_constraints:
+        - "[Constraint 1]"
+
+---
+## 21. LESSONS LEARNED AND PREFERENCES
+# Organizational learning - helps AI avoid past mistakes and follow preferences
+
+lessons_learned:
+  successful_patterns:
+    # What has worked well
+    - pattern: "[e.g., Iterative delivery, Early stakeholder engagement]"
+      why_successful: "[Why this worked]"
+      when_to_apply: "[When to use this approach]"
+
+  failure_patterns_to_avoid:
+    # What hasn't worked
+    - pattern: "[e.g., Big-bang releases, Skipping testing, Over-engineering]"
+      why_failed: "[Why this didn't work]"
+      lesson: "[What was learned]"
+
+  organizational_preferences:
+    # How you prefer to work
+
+    architecture_preferences:
+      - preference: "[e.g., Favor simple over complex, Buy vs build, Open source friendly]"
+        rationale: "[Why this preference]"
+
+    technology_preferences:
+      - preference: "[e.g., Proven technologies over bleeding edge, Specific tech stack preference]"
+        rationale: "[Why this preference]"
+
+    process_preferences:
+      - preference: "[e.g., Continuous delivery, Automated testing, Code review requirements]"
+        rationale: "[Why this preference]"
+
+  known_anti_patterns:
+    # Approaches to avoid
+    - anti_pattern: "[What not to do]"
+      reason: "[Why to avoid]"
+      alternative: "[Better approach]"
+
+---
+## 22. FUTURE VISION
+# Long-term aspirations - helps AI align with where you're going, not just where you are
+
+future_vision:
+  vision_statement: "[Your long-term vision - where do you want to be in 5-10 years]"
+
+  transformational_goals:
+    - goal: "[Major transformation goal]"
+      description: "[What this transformation looks like]"
+      timeframe: "[When you aim to achieve this]"
+      success_indicators:
+        - "[Indicator 1]"
+        - "[Indicator 2]"
+
+  future_business_model:
+    envisioned_changes: "[How business model might evolve]"
+    new_revenue_streams: "[Potential new revenue sources]"
+    new_market_opportunities: "[Markets you aim to enter]"
+
+  technology_vision:
+    target_technology_state: "[What your technology landscape should look like]"
+    emerging_capabilities: "[Capabilities you want to develop]"
+
+  organizational_vision:
+    target_organization: "[How organization should evolve]"
+    target_culture: "[Cultural aspirations]"
+
+  market_position_aspiration:
+    target_position: "[Where you want to be in market - #1 in X, etc.]"
+    brand_aspiration: "[How you want to be perceived]"
+
+---
+## DOCUMENT MAINTENANCE
+
+document_maintenance:
+  version_control:
+    current_version: "1.0"
+    version_history:
+      - version: "1.0"
+        date: "[YYYY-MM-DD]"
+        changes: "[Initial creation]"
+        author: "[Name]"
+
+  review_and_update_process:
+    review_frequency: "[e.g., Quarterly, Semi-annually, Annually]"
+    review_owner: "[Who owns keeping this current]"
+    review_triggers:
+      - "[Trigger 1 - e.g., Major strategy change, New product launch, M&A activity]"
+      - "[Trigger 2]"
+
+  distribution:
+    who_should_have_access:
+      - "[Role/team 1 - e.g., All developers, Product team, Executive team]"
+      - "[Role/team 2]"
+    confidentiality: "[Public, Internal, Confidential, Restricted]"
+
+  usage_guidelines:
+    when_to_reference: "[When this document should be consulted]"
+    how_to_use: "[How to effectively use this as AI context]"
+
+    feedback_process: "[How to provide feedback or suggest updates]"
+
+---
+## APPENDICES (Optional)
+
+appendices:
+  appendix_a_glossary:
+    # Define key terms and acronyms
+    - term: "[Term 1]"
+      definition: "[Definition]"
+
+  appendix_b_reference_documents:
+    # Links to other relevant documents
+    - document: "[Document name]"
+      location: "[Where to find it]"
+      relevance: "[Why it's relevant]"
+
+  appendix_c_organizational_chart:
+    # If helpful, include or reference org chart
+    org_chart_location: "[Where to find current org chart]"
+
+  appendix_d_technology_inventory:
+    # If helpful, detailed technology inventory
+    inventory_location: "[Where to find detailed tech inventory]"
+
+---
+# END OF TEMPLATE
+
+# INSTRUCTIONS FOR USE:
+#
+# 1. SAVE AS: Create a copy of this template for your organization
+#    Suggested filename: "[CompanyName]_Business_Context_[Version].yaml"
+#
+# 2. COMPLETE: Fill in all sections relevant to your business
+#    - Remove or mark N/A any sections that don't apply
+#    - Add additional sections if needed for your specific context
+#    - Be as specific and accurate as possible
+#
+# 3. VALIDATE: Review for completeness and accuracy
+#    - Ensure technical terms are consistent with your environment
+#    - Validate that strategic direction is current
+#    - Confirm constraints and requirements are accurate
+#
+# 4. MAINTAIN: Keep this document current
+#    - Update when business strategy changes
+#    - Update when major technology changes occur
+#    - Update when organizational structure changes
+#    - Review periodically even if no major changes
+#
+# 5. USE: Reference this document when starting new AI-driven development projects
+#    - Provide to AI as initial context
+#    - Reference specific sections relevant to the project
+#    - Use to ensure AI understands your business environment
+#
+# 6. EVOLVE: Improve this template based on experience
+#    - Add sections you find you need repeatedly
+#    - Remove sections that prove not useful
+#    - Refine descriptions for clarity
+#
+# This template is designed to be comprehensive. Completeness is better than brevity
+# for AI context - the more the AI understands about your business, the better it can
+# align development work with your objectives and constraints.

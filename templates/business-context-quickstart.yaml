@@ -1,0 +1,185 @@
+# Business Context Quick Start Template
+# Minimal Viable Version for Fast AI Context Setup
+
+# This is a SIMPLIFIED version with only the most critical sections.
+# Use this if you need to get started quickly and expand later.
+# For full comprehensive template, see: business-context-ai-template.yaml
+
+---
+metadata:
+  document_type: "Business Context Quick Start"
+  document_version: "1.0"
+  company_name: "[Your Company Name]"
+  last_updated: "[YYYY-MM-DD]"
+  document_owner: "[Name and Role]"
+
+---
+## 1. EXECUTIVE SUMMARY (Required)
+
+company_name: "[Your Company Name]"
+tagline: "[One sentence - what you do]"
+
+what_we_do: "[2-3 sentences explaining your business]"
+
+key_metrics:
+  annual_revenue: "[Revenue range]"
+  customers: "[Number of customers]"
+  employees: "[Number of employees]"
+
+competitive_advantage: "[What makes you different - 1-2 sentences]"
+
+vision_3_5_years: "[Where you want to be]"
+
+---
+## 2. PRODUCTS AND SERVICES (Required)
+
+primary_product:
+  name: "[Main product/service name]"
+  description: "[What it does and for whom]"
+  target_customers: "[Who uses this]"
+
+other_products:
+  - name: "[Product 2]"
+    description: "[Brief description]"
+  # Add as needed
+
+---
+## 3. CUSTOMER SEGMENTS (Required)
+
+primary_segment:
+  segment_name: "[e.g., Enterprise B2B, SMB, B2C]"
+  description: "[Who they are]"
+  main_pain_points:
+    - "[Pain point 1]"
+    - "[Pain point 2]"
+  how_we_solve: "[How you address their needs]"
+
+# Add other segments if relevant
+
+---
+## 4. TECHNOLOGY STACK (Required)
+
+core_technologies:
+  frontend: "[e.g., React, Vue, Angular, React Native]"
+  backend: "[e.g., Node.js, Python/Django, Java/Spring]"
+  database: "[e.g., PostgreSQL, MongoDB, MySQL]"
+  cloud_infrastructure: "[e.g., AWS, Azure, GCP, On-premise]"
+  architecture_style: "[e.g., Microservices, Monolithic, Event-driven]"
+
+key_integrations:
+  - system: "[External system 1]"
+    purpose: "[What it's used for]"
+  # Add key integrations
+
+---
+## 5. CONSTRAINTS AND REQUIREMENTS (Required)
+
+regulatory_compliance:
+  # List any regulations you must comply with
+  - regulation: "[e.g., GDPR, HIPAA, PCI-DSS]"
+    requirements: "[Key requirements]"
+
+security_requirements:
+  - "[e.g., Encryption at rest and in transit]"
+  - "[e.g., Multi-factor authentication]"
+
+performance_requirements:
+  - "[e.g., 99.9% uptime]"
+  - "[e.g., <200ms response time]"
+
+technology_constraints:
+  - constraint: "[e.g., Must use specific cloud provider]"
+    reason: "[Why]"
+
+---
+## 6. STRATEGIC OBJECTIVES (Required)
+
+current_priorities:
+  priority_1:
+    objective: "[Primary strategic objective]"
+    why_important: "[Why this matters]"
+    timeline: "[When to achieve]"
+
+  priority_2:
+    objective: "[Secondary objective]"
+    why_important: "[Why this matters]"
+    timeline: "[When]"
+
+key_initiatives:
+  - initiative: "[Major initiative 1]"
+    goal: "[What you're trying to achieve]"
+
+---
+## 7. SUCCESS METRICS (Recommended)
+
+critical_metrics:
+  - metric: "[Most important metric]"
+    current: "[Current value]"
+    target: "[Target value]"
+
+  - metric: "[Second most important]"
+    current: "[Current value]"
+    target: "[Target value]"
+
+---
+## 8. ORGANIZATIONAL CONTEXT (Recommended)
+
+company_culture:
+  decision_making: "[e.g., Fast/Agile, Consensus-driven, Data-driven]"
+  pace: "[e.g., Fast-moving startup, Measured enterprise]"
+  innovation_approach: "[How you approach new ideas and risk]"
+
+team_structure:
+  development_methodology: "[e.g., Agile/Scrum, Kanban, Waterfall]"
+  team_size: "[Number of developers/technical team]"
+
+---
+## 9. AI DEVELOPMENT PREFERENCES (Recommended)
+
+development_approach:
+  methodology: "[e.g., BMad, Traditional Agile, Other]"
+  testing_requirements: "[Testing approach and requirements]"
+  deployment_approach: "[How you deploy - CI/CD, manual, etc.]"
+
+preferences:
+  - preference: "[e.g., Simple over complex, Buy vs build philosophy]"
+    rationale: "[Why]"
+
+common_project_types:
+  - "[e.g., Feature additions to existing platform]"
+  - "[e.g., New integrations]"
+  - "[e.g., Process automation]"
+
+---
+## 10. QUICK REFERENCE LINKS (Optional)
+
+# Links to other key documents for AI to reference
+
+related_documents:
+  architecture: "[Path or URL to architecture docs]"
+  api_documentation: "[Path or URL to API docs]"
+  coding_standards: "[Path or URL to coding standards]"
+  tech_stack_details: "[Path or URL to detailed tech stack]"
+
+---
+# INSTRUCTIONS FOR USE
+
+# 1. Fill in all "Required" sections (1-6)
+# 2. Fill in "Recommended" sections (7-9) if time permits
+# 3. Expand to full template (business-context-ai-template.yaml) over time
+# 4. Use as AI context: "Load [filename].yaml before starting project brief"
+
+# WHEN TO UPGRADE TO FULL TEMPLATE:
+# - When you have multiple ongoing projects
+# - When you need more detailed governance
+# - When strategic alignment becomes critical
+# - When organizational complexity increases
+
+---
+# NEXT STEPS
+
+# After filling out this quick start:
+# 1. Use it in your next AI development project
+# 2. Note what additional context AI needs
+# 3. Gradually expand sections
+# 4. Eventually migrate to full template for comprehensive coverage
