@@ -1,0 +1,323 @@
+# Business Context Template Filling Workflow
+# Guided workflow for creating high-quality business context documents
+
+workflow:
+  id: template-filling
+  name: Business Context Template Filling
+  description: >-
+    Interactive workflow for filling business context templates with
+    fact-checked, AI-useful content. Emphasizes specificity over marketing.
+
+  estimated_time:
+    quickstart: "4-6 hours"
+    full: "8-16 hours"
+    enterprise: "16-40 hours"
+
+  principles:
+    - Facts over marketing language
+    - Specific numbers over vague descriptions
+    - Evidence-backed claims only
+    - AI-usefulness as primary metric
+    - Honest gaps over false information
+
+  sequence:
+    - step: template_selection
+      action: select_template
+      options:
+        - quickstart
+        - full
+        - enterprise
+      notes: "User selects based on organization size and complexity"
+
+    - step: create_working_copy
+      action: copy_template
+      creates: my-business-context.yaml
+      notes: "Create working copy from selected template"
+
+    - step: section_1_executive_summary
+      section: executive_summary
+      priority: critical
+      estimated_time: "30-60 min"
+      quality_gates:
+        - has_quantified_metrics
+        - no_marketing_language
+        - competitive_advantage_has_evidence
+      notes: "Foundation section - sets tone for document quality"
+
+    - step: section_2_company_profile
+      section: company_profile
+      priority: high
+      estimated_time: "30-45 min"
+      quality_gates:
+        - org_structure_complete
+        - leadership_roles_defined
+        - culture_described_not_marketed
+      notes: "Organizational context for AI"
+
+    - step: section_3_business_history
+      section: business_history
+      priority: medium
+      estimated_time: "20-30 min"
+      quality_gates:
+        - milestones_have_dates
+        - transformations_explained
+      notes: "Context on evolution - why things are the way they are"
+
+    - step: section_4_core_business
+      section: core_business
+      priority: critical
+      estimated_time: "45-60 min"
+      quality_gates:
+        - value_proposition_specific
+        - business_model_clear
+        - revenue_streams_quantified
+      notes: "Heart of the document - what you actually do"
+
+    - step: section_5_products_services
+      section: products_and_services
+      priority: high
+      estimated_time: "30-60 min"
+      quality_gates:
+        - all_products_listed
+        - technical_details_included
+        - metrics_per_product
+      notes: "What you sell and deliver"
+
+    - step: section_6_customers
+      section: customer_segments
+      priority: high
+      estimated_time: "30-45 min"
+      quality_gates:
+        - segments_defined_with_criteria
+        - segment_sizes_quantified
+        - needs_specific_not_generic
+      notes: "Who buys from you - critical for solution context"
+
+    - step: section_7_competition
+      section: competitive_landscape
+      priority: medium
+      estimated_time: "30-45 min"
+      quality_gates:
+        - competitors_named
+        - differentiation_evidenced
+        - honest_about_weaknesses
+      notes: "Market context and positioning"
+
+    - step: section_8_capabilities
+      section: business_capabilities
+      priority: high
+      estimated_time: "45-60 min"
+      quality_gates:
+        - maturity_assessed_honestly
+        - gaps_identified
+        - no_inflated_ratings
+      notes: "Current state capabilities - be honest about maturity"
+
+    - step: section_9_processes
+      section: business_processes
+      priority: medium
+      estimated_time: "30-45 min"
+      quality_gates:
+        - key_processes_documented
+        - pain_points_identified
+        - metrics_included
+      notes: "How work flows - important for automation opportunities"
+
+    - step: section_10_technology
+      section: technology_landscape
+      priority: critical
+      estimated_time: "60-90 min"
+      quality_gates:
+        - all_systems_listed
+        - versions_included
+        - technical_debt_honest
+        - integrations_documented
+      notes: "CRITICAL for AI development - must be complete and accurate"
+
+    - step: section_11_data
+      section: data_and_analytics
+      priority: high
+      estimated_time: "30-45 min"
+      quality_gates:
+        - data_assets_listed
+        - volumes_quantified
+        - governance_described
+      notes: "Data context for AI solutions"
+
+    - step: section_12_operating_model
+      section: operating_model
+      priority: medium
+      estimated_time: "20-30 min"
+      quality_gates:
+        - decision_rights_clear
+        - governance_documented
+      notes: "How decisions get made"
+
+    - step: section_13_strategy
+      section: strategy
+      priority: high
+      estimated_time: "30-45 min"
+      quality_gates:
+        - objectives_measurable
+        - initiatives_have_timelines
+        - no_vague_aspirations
+      notes: "Where you're going - guides AI toward strategic alignment"
+
+    - step: section_14_metrics
+      section: metrics_and_kpis
+      priority: high
+      estimated_time: "20-30 min"
+      quality_gates:
+        - all_metrics_quantified
+        - targets_defined
+        - north_star_identified
+      notes: "How you measure success"
+
+    - step: section_15_constraints
+      section: constraints_and_requirements
+      priority: critical
+      estimated_time: "45-60 min"
+      quality_gates:
+        - regulations_listed_with_requirements
+        - security_requirements_specific
+        - performance_requirements_measurable
+        - budget_constraints_stated
+      notes: "CRITICAL - what AI solutions MUST comply with"
+
+    - step: section_16_stakeholders
+      section: stakeholders
+      priority: medium
+      estimated_time: "20-30 min"
+      quality_gates:
+        - key_stakeholders_identified
+        - decision_authority_clear
+      notes: "Who needs to be involved in AI projects"
+
+    - step: section_17_partnerships
+      section: partnerships_and_ecosystem
+      priority: low
+      estimated_time: "20-30 min"
+      quality_gates:
+        - key_partners_listed
+        - dependencies_identified
+      notes: "External relationships that affect solutions"
+
+    - step: section_18_risks
+      section: risks_and_challenges
+      priority: medium
+      estimated_time: "20-30 min"
+      quality_gates:
+        - risks_assessed_honestly
+        - mitigations_described
+      notes: "What could go wrong - important for solution design"
+
+    - step: section_19_culture
+      section: organizational_culture
+      priority: low
+      estimated_time: "15-20 min"
+      quality_gates:
+        - culture_described_not_marketed
+        - change_readiness_assessed
+      notes: "Soft factors that affect project success"
+
+    - step: section_20_ai_context
+      section: ai_development_context
+      priority: high
+      estimated_time: "20-30 min"
+      quality_gates:
+        - current_ai_usage_documented
+        - preferences_stated
+        - review_requirements_clear
+      notes: "Meta-section - how you want to work with AI"
+
+    - step: section_21_lessons_learned
+      section: lessons_learned
+      priority: medium
+      estimated_time: "20-30 min"
+      quality_gates:
+        - specific_examples_given
+        - anti_patterns_documented
+      notes: "Institutional knowledge to avoid past mistakes"
+
+    - step: section_22_future_vision
+      section: future_vision
+      priority: medium
+      estimated_time: "20-30 min"
+      quality_gates:
+        - vision_time_bound
+        - goals_measurable
+      notes: "Long-term direction for strategic alignment"
+
+    - step: final_validation
+      action: validate_document
+      uses: /BizContext/validate
+      quality_gates:
+        - overall_score_above_80
+        - no_critical_issues
+        - all_sections_complete
+      notes: "Final quality check before document is ready"
+
+    - step: export
+      action: export_final
+      creates: final-business-context.yaml
+      notes: "Export validated document"
+
+  flow_diagram: |
+    ```mermaid
+    graph TD
+        A[Start] --> B[Select Template]
+        B --> C[Create Working Copy]
+        C --> D[Section 1: Executive Summary]
+        D --> E{Quality OK?}
+        E -->|No| F[Critique & Improve]
+        F --> D
+        E -->|Yes| G[Next Section]
+        G --> H{More Sections?}
+        H -->|Yes| D
+        H -->|No| I[Final Validation]
+        I --> J{Score >= 80?}
+        J -->|No| K[Fix Issues]
+        K --> I
+        J -->|Yes| L[Export Final Document]
+        L --> M[Done!]
+
+        style M fill:#90EE90
+        style I fill:#ADD8E6
+        style F fill:#FFE4B5
+    ```
+
+  section_priority_guide:
+    must_complete_first:
+      - executive_summary
+      - core_business
+      - technology_landscape
+      - constraints_and_requirements
+
+    high_value:
+      - products_and_services
+      - customer_segments
+      - business_capabilities
+      - strategy
+      - metrics_and_kpis
+      - ai_development_context
+
+    complete_if_time:
+      - company_profile
+      - business_history
+      - competitive_landscape
+      - business_processes
+      - data_and_analytics
+      - operating_model
+      - stakeholders
+      - risks_and_challenges
+      - lessons_learned
+      - future_vision
+
+    optional:
+      - partnerships_and_ecosystem
+      - organizational_culture
+
+  interruption_handling:
+    save_progress: "Progress saved automatically to my-business-context.yaml"
+    resume: "Use /BizContext/start to see current progress and continue"
+    partial_value: "Even partially completed documents provide value - AI will work with what's available"

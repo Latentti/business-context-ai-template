@@ -4,6 +4,21 @@ Complete step-by-step guide to creating your business context for AI development
 
 ---
 
+> **💡 Tip: AI-Assisted Filling Available**
+>
+> This guide covers manual template filling. For a faster, interactive experience, use the built-in Claude Code agent:
+>
+> ```bash
+> cd business-context-ai-template
+> claude
+> /BizContext/start
+> ```
+>
+> The agent guides you section by section, challenges vague content, and ensures quality.
+> See [Claude Code Guide](claude-code-guide.md) for details.
+
+---
+
 ## Table of Contents
 
 1. [Getting Started](#getting-started)

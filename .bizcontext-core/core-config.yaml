@@ -1,0 +1,110 @@
+# Business Context AI - Core Configuration
+# Configuration for the BizContext agent
+
+# Slash command prefix for Claude Code
+slashPrefix: BizContext
+
+# Language settings
+language:
+  inputLanguage: "any"  # Accept any language from user
+  outputLanguage: "en"  # ALWAYS write template content in English
+  conversationLanguage: "user-preferred"  # Respond in user's language
+  rationale: "AI development tools work most reliably with English content"
+
+# Template settings
+templates:
+  location: templates
+  default: business-context-full.yaml
+  options:
+    - name: quickstart
+      file: business-context-quickstart.yaml
+      sections: 10
+      estimatedTime: "4-6 hours"
+      targetOrg: "< 50 employees"
+    - name: full
+      file: business-context-full.yaml
+      sections: 22
+      estimatedTime: "8-16 hours"
+      targetOrg: "50-500 employees"
+    - name: enterprise
+      file: business-context-enterprise.yaml
+      sections: 22+
+      estimatedTime: "16-40 hours"
+      targetOrg: "500+ employees"
+
+# Working file settings
+workingFile:
+  default: my-business-context.yaml
+  location: "project root"
+  backupOnValidate: true
+
+# Quality settings
+quality:
+  minimumScore: 80
+  criticalSections:
+    - executive_summary
+    - core_business
+    - technology_landscape
+    - constraints_and_requirements
+
+# Fact-checking settings
+factChecking:
+  enabled: true
+  strictMode: true  # Immediately challenge all vague content
+  redFlagPatterns:
+    superlatives:
+      - "best"
+      - "leading"
+      - "top"
+      - "premier"
+      - "world-class"
+      - "industry-leading"
+      - "cutting-edge"
+      - "innovative"
+      - "revolutionary"
+    vagueQuantities:
+      - "many"
+      - "several"
+      - "few"
+      - "some"
+      - "significant"
+      - "substantial"
+      - "numerous"
+      - "various"
+    marketingBuzzwords:
+      - "synergy"
+      - "leverage"
+      - "optimize"
+      - "holistic"
+      - "seamless"
+      - "robust"
+      - "scalable"
+      - "agile"
+      - "dynamic"
+    opinionMarkers:
+      - "we believe"
+      - "we think"
+      - "we feel"
+      - "is considered"
+      - "is known for"
+      - "is recognized"
+
+# Validation settings
+validation:
+  autoValidateOnComplete: true
+  scoreThresholds:
+    excellent: 90
+    good: 75
+    adequate: 60
+    needsWork: 40
+
+# Progress tracking
+progress:
+  saveAutomatically: true
+  showPercentage: true
+
+# Export settings
+export:
+  format: yaml
+  includeMetadata: true
+  includeValidationScore: true

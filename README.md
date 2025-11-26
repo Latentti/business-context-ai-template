@@ -5,6 +5,34 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TOGAF](https://img.shields.io/badge/TOGAF-Phase%20B-blue.svg)](https://www.opengroup.org/togaf)
 [![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/Latentti/business-context-ai-template)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-Agent%20Included-blueviolet.svg)](https://claude.ai/claude-code)
+
+---
+
+## 🤖 NEW: AI-Assisted Template Filling with Claude Code
+
+**This repository includes a built-in Claude Code agent** that guides you through filling the template interactively:
+
+```bash
+# Clone and start immediately
+git clone https://github.com/Latentti/business-context-ai-template.git
+cd business-context-ai-template
+claude
+
+# Start the guided workflow
+/BizContext/start
+```
+
+The **Business Context Architect** agent will:
+- 🎯 Guide you section by section
+- ⚠️ Challenge vague or marketing-style content
+- 📊 Demand specific numbers and evidence
+- 🌍 Accept input in any language, write output in English
+- ✅ Validate your document for AI-readiness
+
+**Result:** What would take 8-16 hours of manual work becomes a guided 4-6 hour conversation.
+
+[📖 See Claude Code Guide →](docs/claude-code-guide.md)
 
 ---
 
@@ -66,30 +94,46 @@ You: [Answers 2-3 project-specific questions]
 
 ## 🚀 Quick Start
 
-### 1. Choose Your Template
+### Option A: AI-Guided (Recommended) ⭐
 
-We provide **three templates** for different needs:
+Use the built-in Claude Code agent for interactive, fact-checked filling:
 
-- **📋 Quick Start** (4-6 hours) - Minimum viable business context with 10 essential sections
-- **📚 Full Template** (8-16 hours) - Comprehensive TOGAF-based template with 22 sections
-- **🏢 Enterprise** (16-40 hours) - Extended template for complex organizations
+```bash
+# Clone and start
+git clone https://github.com/Latentti/business-context-ai-template.git
+cd business-context-ai-template
+claude
 
-### 2. Copy and Fill
+# Start the guided workflow
+/BizContext/start
+```
+
+The agent will guide you through each section, challenge vague content, and ensure quality.
+
+### Option B: Manual Filling
+
+Fill the template yourself using the documentation:
 
 ```bash
 # Clone this repository
 git clone https://github.com/Latentti/business-context-ai-template.git
-
-# Choose your template
 cd business-context-ai-template/templates
 
 # Copy the template that fits your needs
-cp business-context-quickstart.yaml ../my-company-context.yaml
+cp business-context-full.yaml ../my-company-context.yaml
 
 # Fill it out (see docs/usage-guide.md for help)
 ```
 
-### 3. Use in AI Projects
+### Template Options
+
+| Template | Sections | Time | Best For |
+|----------|----------|------|----------|
+| **📋 Quick Start** | 10 | 4-6h | Startups, small teams |
+| **📚 Full** | 22 | 8-16h | Scale-ups, mid-size |
+| **🏢 Enterprise** | 22+ | 16-40h | Large organizations |
+
+### Use in AI Projects
 
 ```
 # In your AI development tool:
@@ -103,10 +147,9 @@ before we start the project."
 
 ### Core Documents
 
-- **[Usage Guide](docs/usage-guide.md)** - Step-by-step guide to filling out the template
+- **[Claude Code Guide](docs/claude-code-guide.md)** ⭐ - AI-assisted template filling (recommended)
+- **[Usage Guide](docs/usage-guide.md)** - Manual step-by-step guide
 - **[Best Practices](docs/best-practices.md)** - How to write effective business context for AI
-- **[Maintenance Guide](docs/maintenance-guide.md)** - Keeping your context up to date
-- **[FAQ](docs/faq.md)** - Common questions and answers
 
 ### Templates
 
@@ -114,11 +157,10 @@ before we start the project."
 - **[Full Template](templates/business-context-full.yaml)** - 22 comprehensive sections (8-16h)
 - **[Enterprise Template](templates/business-context-enterprise.yaml)** - Extended for complex orgs (16-40h)
 
-### Examples
+### Reference Data (in `.bizcontext-core/data/`)
 
-- **[Tech Startup Example](examples/tech-startup-example.yaml)** - SaaS company example
-- **[Enterprise Example](examples/enterprise-example.yaml)** - Large organization example
-- **[E-commerce Example](examples/ecommerce-example.yaml)** - Online retail example
+- **[Anti-Patterns](.bizcontext-core/data/anti-patterns.md)** - Common mistakes to avoid
+- **[Good Examples](.bizcontext-core/data/good-examples.md)** - Examples of quality content
 
 ---
 
@@ -155,10 +197,13 @@ Our templates are based on **TOGAF Phase B (Business Architecture)** framework t
 
 ## ✨ Key Features
 
+### 🤖 AI-Assisted Filling (NEW!)
+Built-in Claude Code agent guides you interactively, challenges vague content, ensures quality
+
 ### 📊 TOGAF-Based Structure
 Built on enterprise architecture best practices (TOGAF Phase B - Business Architecture)
 
-### 🤖 AI-Optimized
+### ⚡ AI-Optimized
 Designed specifically for AI consumption - structured, comprehensive, context-rich
 
 ### 🔧 Three Complexity Levels
@@ -173,8 +218,8 @@ Works for startups, scale-ups, enterprises, any industry
 ### 🔄 Maintainable
 Includes version control, update triggers, and maintenance schedules
 
-### 🌍 Multi-Language Ready
-Templates can be filled in any language
+### 🌍 Multi-Language Input
+Describe your business in any language - output is always English for AI compatibility
 
 ---
 
@@ -222,17 +267,24 @@ Templates can be filled in any language
 
 ## 🛠️ Tools Included
 
-### [Checklist Tool](tools/completion-checklist.md)
-Track your progress filling out the template
+### 🤖 Claude Code Agent (NEW!)
+Interactive AI assistant for template filling - the fastest way to create quality content.
 
-### [Validation Tool](tools/validation-checklist.md)
-Ensure your context is complete and AI-ready
+| Command | Description |
+|---------|-------------|
+| `/BizContext/start` | Start guided template filling workflow |
+| `/BizContext/fill-section` | Fill a specific section interactively |
+| `/BizContext/critique` | Evaluate content for AI-usefulness |
+| `/BizContext/validate` | Run full document validation |
 
-### [Update Template](tools/update-template.md)
-Structured approach to updating your context
+[📖 Claude Code Guide →](docs/claude-code-guide.md)
 
-### [Section Priority Guide](tools/section-priority-guide.md)
-Which sections to fill first based on your needs
+### 📋 Manual Tools
+
+- **[Checklist Tool](tools/completion-checklist.md)** - Track your progress filling out the template
+- **[Validation Tool](tools/validation-checklist.md)** - Ensure your context is complete and AI-ready
+- **[Update Template](tools/update-template.md)** - Structured approach to updating your context
+- **[Section Priority Guide](tools/section-priority-guide.md)** - Which sections to fill first based on your needs
 
 ---
 
@@ -302,8 +354,10 @@ Organizations using this template (with permission):
 ### Version 1.0 (Current)
 - ✅ Core templates (Quick Start, Full, Enterprise)
 - ✅ Comprehensive documentation
-- ✅ Three industry examples
 - ✅ Basic tools (checklists, validators)
+- ✅ **Claude Code Agent for AI-assisted filling**
+- ✅ **Fact-checking and quality validation**
+- ✅ **Multi-language input support**
 
 ### Version 1.1 (Planned)
 - [ ] Interactive web-based template builder
@@ -312,20 +366,20 @@ Organizations using this template (with permission):
 - [ ] Multi-language documentation
 
 ### Version 2.0 (Future)
-- [ ] AI-assisted template filling
 - [ ] Integration templates for popular AI tools
 - [ ] Template analytics and insights
 - [ ] Community template library
+- [ ] VS Code extension
 
 ---
 
 ## 📈 Project Stats
 
 - **Templates**: 3 (Quick Start, Full, Enterprise)
-- **Examples**: 3 (Tech Startup, Enterprise, E-commerce)
-- **Documentation Pages**: 15+
-- **Supported Languages**: Any (template is language-agnostic)
-- **Lines of Documentation**: 5000+
+- **Claude Code Commands**: 4 (start, fill-section, critique, validate)
+- **Documentation Pages**: 20+
+- **Input Languages**: Any (output always English)
+- **Lines of Code/Documentation**: 10,000+
 
 ---
 
@@ -341,15 +395,17 @@ Built with inspiration from:
 
 ## 📜 Changelog
 
-### [1.0.0] - 2025-11-24
+### [1.0.0] - 2025-11-26
 
 #### Added
 - Initial release
 - Quick Start template (10 sections)
 - Full template (22 sections)
-- Enterprise template (extended)
+- Enterprise template (22+ sections)
+- **Claude Code Agent** for AI-assisted template filling
+- **Fact-checking system** - challenges vague/marketing content
+- **Multi-language input** - any language in, English out
 - Comprehensive documentation
-- Three industry examples
 - Tool suite (checklists, validators)
 
 See [CHANGELOG.md](CHANGELOG.md) for full version history.
@@ -358,20 +414,22 @@ See [CHANGELOG.md](CHANGELOG.md) for full version history.
 
 ## 🚀 Get Started Now
 
+### Fastest Way: Claude Code Agent ⭐
+
 ```bash
-# 1. Clone the repository
 git clone https://github.com/Latentti/business-context-ai-template.git
+cd business-context-ai-template
+claude
+/BizContext/start
+```
 
-# 2. Choose your template
+### Manual Way
+
+```bash
+git clone https://github.com/Latentti/business-context-ai-template.git
 cd business-context-ai-template/templates
-
-# 3. Copy and start filling
-cp business-context-quickstart.yaml ../my-company-context.yaml
-
-# 4. Read the usage guide
-open ../docs/usage-guide.md
-
-# 5. Start using in your AI projects!
+cp business-context-full.yaml ../my-company-context.yaml
+# Read docs/usage-guide.md and start filling
 ```
 
 ---
