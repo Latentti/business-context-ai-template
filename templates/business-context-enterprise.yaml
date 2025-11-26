@@ -1,0 +1,4024 @@
+# Business Context Template for AI-Driven Development - ENTERPRISE EDITION
+# TOGAF Phase B - Business Architecture (Extended for Large Organizations)
+# Version: 1.0
+# Purpose: Comprehensive business context for enterprise organizations (500+ employees)
+
+---
+## ENTERPRISE TEMPLATE USAGE INSTRUCTIONS
+
+# This ENTERPRISE template extends the full template with additional depth for:
+# - Large organizations (500+ employees)
+# - Multi-business unit structures
+# - Complex governance frameworks
+# - Extensive compliance requirements
+# - Enterprise-scale architecture
+# - Multi-geography operations
+#
+# Estimated completion time: 16-40 hours (depending on complexity)
+#
+# This template follows TOGAF Business Architecture framework with enterprise extensions.
+
+---
+metadata:
+  document_type: "Enterprise Business Context for AI Development"
+  document_version: "1.0"
+  company_name: "[Your Company Name]"
+  last_updated: "[YYYY-MM-DD]"
+  document_owner: "[Name and Role]"
+  review_frequency: "[e.g., Quarterly]"
+  purpose: "Enterprise-scale strategic business context for AI-assisted software development"
+  classification: "[Public, Internal, Confidential, Restricted]"
+  distribution_list:
+    - "[Role/Team 1]"
+    - "[Role/Team 2]"
+
+---
+## 1. EXECUTIVE SUMMARY
+
+executive_summary:
+  company_name: "[Company Name]"
+  tagline: "[One-sentence description]"
+  company_type: "[Public/Private/Subsidiary/Holding Company]"
+
+  founded:
+    year: "[Year founded]"
+    incorporated_year: "[Year incorporated if different]"
+    founding_location: "[City, Country]"
+
+  ownership_structure:
+    type: "[e.g., Publicly traded, Private equity owned, Family owned, Subsidiary]"
+    stock_exchange: "[If public - NYSE, NASDAQ, etc.]"
+    ticker_symbol: "[If public]"
+    major_shareholders:
+      - shareholder: "[Shareholder name or type]"
+        ownership_percentage: "[%]"
+
+  market_position:
+    industry_classification: "[Primary industry - NAICS/SIC code]"
+    market_position: "[Market leader/Challenger/Niche player in X]"
+    global_presence: "[Countries/regions served]"
+
+  key_metrics:
+    # Enterprise scale indicators
+    annual_revenue: "[Revenue - be specific for public companies]"
+    revenue_growth_yoy: "[% year-over-year growth]"
+    employees: "[Total headcount]"
+    employee_breakdown:
+      full_time: "[FTE count]"
+      contractors: "[Contractor count if significant]"
+      geographic_distribution: "[Brief summary - e.g., 60% EMEA, 30% Americas, 10% APAC]"
+
+    customers:
+      total_customers: "[Number]"
+      enterprise_customers: "[Number of enterprise accounts]"
+      customer_concentration: "[Top 10 customers % of revenue if relevant]"
+
+    locations:
+      offices: "[Number of offices]"
+      countries: "[Number of countries]"
+      data_centers: "[Number and locations if relevant]"
+
+    operational_scale:
+      transactions_per_year: "[Volume indicators]"
+      data_processed: "[TB/PB processed annually if relevant]"
+      service_requests: "[Annual support/service volume]"
+
+  competitive_advantage:
+    core_differentiator: "[The fundamental competitive moat]"
+
+    key_strengths:
+      - strength: "[Strength 1]"
+        evidence: "[Quantifiable proof points]"
+        sustainability: "[Why this advantage is defensible]"
+      - strength: "[Strength 2]"
+        evidence: "[Proof points]"
+        sustainability: "[Defensibility]"
+      - strength: "[Strength 3]"
+        evidence: "[Proof points]"
+        sustainability: "[Defensibility]"
+
+    market_recognition:
+      - recognition: "[e.g., Gartner Magic Quadrant position, Industry awards]"
+        significance: "[Why this matters]"
+
+  strategic_direction:
+    vision_3_5_years: "[Strategic vision]"
+    vision_10_years: "[Long-term aspiration]"
+    mission_statement: "[Company purpose]"
+
+    strategic_priorities:
+      # Top 3-5 enterprise priorities
+      - priority: "[Priority 1]"
+        investment_level: "[Significant/Moderate/Limited]"
+      - priority: "[Priority 2]"
+        investment_level: "[Level]"
+
+---
+## 2. ENTERPRISE PROFILE
+
+enterprise_profile:
+  legal_structure:
+    legal_name: "[Official legal name]"
+    parent_company: "[If subsidiary]"
+    legal_entity_structure: "[Holding company, OpCo structure, etc.]"
+
+    major_subsidiaries:
+      - subsidiary: "[Subsidiary name]"
+        jurisdiction: "[Country]"
+        purpose: "[Why this entity exists]"
+        revenue_contribution: "[% or absolute]"
+
+  corporate_headquarters:
+    location: "[City, Country]"
+    regional_headquarters:
+      - region: "[e.g., EMEA, Americas, APAC]"
+        location: "[City, Country]"
+        scope: "[What this HQ oversees]"
+
+  organizational_structure:
+    structure_type: "[Matrix, Divisional, Functional, Hybrid]"
+    reporting_structure: "[How organization is structured]"
+
+    executive_leadership:
+      # C-suite and key executives
+      - role: "Chief Executive Officer (CEO)"
+        name: "[Name]"
+        tenure: "[Years in role]"
+        background: "[Relevant background]"
+        strategic_focus: "[Key focus areas]"
+
+      - role: "Chief Financial Officer (CFO)"
+        name: "[Name]"
+        tenure: "[Years]"
+        strategic_focus: "[Focus areas]"
+
+      - role: "Chief Technology Officer (CTO)"
+        name: "[Name]"
+        tenure: "[Years]"
+        strategic_focus: "[Technology vision, innovation, architecture]"
+
+      - role: "Chief Information Officer (CIO)"
+        name: "[Name]"
+        tenure: "[Years]"
+        strategic_focus: "[IT operations, enterprise systems]"
+
+      - role: "Chief Operating Officer (COO)"
+        name: "[Name]"
+        tenure: "[Years]"
+        strategic_focus: "[Operations, delivery, efficiency]"
+
+      - role: "Chief Product Officer (CPO)"
+        name: "[Name]"
+        tenure: "[Years]"
+        strategic_focus: "[Product strategy, roadmap]"
+
+      # Add other C-level roles as relevant
+
+    business_units:
+      # Major divisions or business units
+
+      business_unit_1:
+        unit_name: "[BU Name]"
+        leader: "[Name and Title]"
+
+        scope:
+          products_services: "[What this BU offers]"
+          markets_served: "[Geographic or industry markets]"
+          customer_segments: "[Who they serve]"
+
+        metrics:
+          revenue: "[Revenue or % of total]"
+          employees: "[Headcount]"
+          profitability: "[Margin or P&L status]"
+
+        strategic_importance: "[High/Medium/Low and why]"
+
+        autonomy_level:
+          technology: "[High/Medium/Low - can BU choose own tech]"
+          process: "[Autonomy in processes]"
+          budget: "[Financial autonomy]"
+
+      # Repeat for each BU
+
+    corporate_functions:
+      # Centralized shared services
+
+      - function: "Enterprise IT"
+        size: "[Headcount]"
+        scope: "[What they manage - infrastructure, enterprise apps, etc.]"
+        service_model: "[Centralized/Federated/Hybrid]"
+        budget: "[Annual budget if relevant]"
+
+      - function: "Enterprise Architecture"
+        size: "[Headcount]"
+        scope: "[Architecture governance, standards, etc.]"
+
+      - function: "Finance and Accounting"
+        size: "[Headcount]"
+        scope: "[Scope of responsibility]"
+
+      - function: "Human Resources"
+        size: "[Headcount]"
+        scope: "[Scope]"
+
+      - function: "Legal and Compliance"
+        size: "[Headcount]"
+        scope: "[Scope]"
+
+      # Add other corporate functions
+
+    external_resources:
+      consulting_usage:
+        annual_spend: "[Consulting budget]"
+        primary_firms:
+          - "[Firm 1]"
+        typical_usage: "[What consultants are used for]"
+
+      outsourced_functions:
+        - function: "[Outsourced function]"
+          provider: "[Provider name or type]"
+          rationale: "[Why outsourced]"
+          contract_value: "[Annual contract value]"
+
+  governance_structure:
+    board_of_directors:
+      structure: "[Board composition]"
+      key_committees:
+        - committee: "[e.g., Audit Committee, Risk Committee, Technology Committee]"
+          purpose: "[What they oversee]"
+          members: "[Number of members]"
+
+    executive_committees:
+      - committee: "[e.g., Executive Leadership Team, Operating Committee]"
+        purpose: "[Decision-making scope]"
+        members: "[Who participates]"
+        meeting_frequency: "[How often]"
+
+  enterprise_culture:
+    cultural_archetype: "[e.g., Clan, Adhocracy, Market, Hierarchy - OCAI model]"
+
+    cultural_attributes:
+      - "[Cultural characteristic 1]"
+      - "[Cultural characteristic 2]"
+      - "[Cultural characteristic 3]"
+
+    values:
+      - value: "[Core value 1]"
+        manifestation: "[How this shows up in practice]"
+      - value: "[Core value 2]"
+        manifestation: "[How this shows up]"
+
+    decision_making_style: "[Consensus-driven, Data-driven, Executive-driven, etc.]"
+
+    innovation_approach:
+      risk_tolerance: "[Conservative/Moderate/Aggressive]"
+      innovation_model: "[How innovation happens - labs, acquisitions, partnerships]"
+      innovation_budget: "[% of revenue or absolute]"
+
+    work_environment:
+      work_model: "[Remote/Hybrid/Office-based]"
+      geographic_distribution: "[How distributed is workforce]"
+      collaboration_tools:
+        - "[Tool 1]"
+        - "[Tool 2]"
+
+---
+## 3. BUSINESS HISTORY AND EVOLUTION
+
+business_history:
+  founding_story:
+    origin: "[How and why company was founded]"
+    founders:
+      - name: "[Founder name]"
+        current_role: "[Current involvement if any]"
+    original_vision: "[Original purpose]"
+
+  major_milestones:
+    - year: "[Year]"
+      milestone: "[Significant event - e.g., Founded, IPO, Major acquisition]"
+      impact: "[Business impact]"
+      strategic_significance: "[Why this matters to current state]"
+
+    # Add all significant milestones
+
+  business_model_evolution:
+    phase_1:
+      timeframe: "[Years]"
+      business_model: "[Description]"
+      key_characteristics: "[What defined this era]"
+
+    phase_2:
+      timeframe: "[Years]"
+      business_model: "[Description]"
+      transformation_drivers: "[What drove the change]"
+
+    current_phase:
+      timeframe: "[Years to present]"
+      business_model: "[Current model]"
+      evolution_trajectory: "[Where model is heading]"
+
+  ownership_evolution:
+    ownership_history:
+      - year: "[Year]"
+        event: "[e.g., Founded as private company, PE investment, IPO, Acquisition]"
+        ownership_structure: "[Structure at that time]"
+        implications: "[How this shaped the business]"
+
+  major_transformations:
+    # Significant transformation programs
+
+    transformation_1:
+      name: "[Transformation name]"
+      timeframe: "[Years]"
+      scope: "[What was transformed]"
+      drivers: "[Why this transformation]"
+      outcomes: "[Results achieved]"
+      lessons_learned: "[Key learnings]"
+
+  mergers_and_acquisitions:
+    # Significant M&A activity
+
+    acquisitions:
+      - year: "[Year]"
+        target: "[Company acquired]"
+        rationale: "[Why acquired]"
+        integration_status: "[Fully integrated/Partially/Operating independently]"
+        strategic_impact: "[How this shaped business]"
+
+    divestitures:
+      - year: "[Year]"
+        business_sold: "[What was divested]"
+        rationale: "[Why divested]"
+        impact: "[Impact on remaining business]"
+
+---
+## 4. CORE BUSINESS AND VALUE PROPOSITION
+
+core_business:
+  elevator_pitch: "[30-60 second description]"
+
+  value_proposition:
+    enterprise_value_proposition: "[Overarching value proposition]"
+
+    value_by_segment:
+      # Different value props for different segments
+
+      segment_1:
+        segment: "[e.g., Enterprise B2B]"
+        value_proposition: "[Specific value for this segment]"
+        differentiation: "[How you differentiate for this segment]"
+
+      # Repeat for each segment
+
+  business_model_canvas:
+    # Comprehensive business model
+
+    customer_segments:
+      enterprise_segment:
+        segment_name: "[Segment name]"
+        characteristics:
+          company_size: "[Size criteria]"
+          industry_focus: "[Industries]"
+          geographic_focus: "[Regions]"
+
+        personas:
+          - persona: "[e.g., CIO, VP Operations]"
+            role: "[Their role]"
+            goals: "[What they want to achieve]"
+            pain_points: "[Their challenges]"
+
+      # Detailed segment breakdown
+
+    value_propositions:
+      quantified_value:
+        roi_timeframe: "[Typical ROI timeframe]"
+        typical_roi: "[ROI % or multiple]"
+
+        value_metrics:
+          - metric: "[e.g., Cost reduction]"
+            typical_value: "[X% reduction or $Y savings]"
+          - metric: "[e.g., Revenue increase]"
+            typical_value: "[Value]"
+          - metric: "[e.g., Efficiency gain]"
+            typical_value: "[Value]"
+
+    channels:
+      go_to_market_model:
+        direct_sales:
+          coverage: "[% of revenue]"
+          sales_team_size: "[Number of sales reps]"
+          typical_deal_size: "[Average contract value]"
+          sales_cycle: "[Typical length]"
+
+        channel_partners:
+          coverage: "[% of revenue]"
+          partner_types:
+            - "[Partner type 1]"
+          partner_count: "[Number of active partners]"
+
+        digital_self_service:
+          coverage: "[% of revenue if applicable]"
+          conversion_metrics: "[Key metrics]"
+
+      delivery_channels:
+        - channel: "[Delivery method]"
+          usage: "[% of customers using this]"
+
+      support_channels:
+        support_model: "[Tiered support, 24/7, etc.]"
+        support_metrics:
+          - metric: "[e.g., First response time]"
+            target: "[SLA target]"
+
+    revenue_streams:
+      revenue_model: "[Subscription, Transaction, License, Hybrid]"
+
+      stream_breakdown:
+        stream_1:
+          stream_type: "[e.g., SaaS subscription]"
+          description: "[Details]"
+          pricing_model: "[Per user, per transaction, etc.]"
+          percentage_of_revenue: "[X%]"
+          growth_rate: "[YoY growth %]"
+          strategic_importance: "[High/Medium/Low]"
+
+        # Detailed breakdown of all streams
+
+      revenue_quality:
+        recurring_revenue_percentage: "[% of revenue that's recurring]"
+        contract_duration:
+          average_contract_length: "[Months/years]"
+          typical_payment_terms: "[Annual/monthly/quarterly]"
+
+        customer_economics:
+          average_customer_lifetime_value: "[CLTV]"
+          customer_acquisition_cost: "[CAC]"
+          ltv_to_cac_ratio: "[Ratio]"
+          payback_period: "[Months to recover CAC]"
+
+    key_resources:
+      intellectual_property:
+        patents:
+          - patent_area: "[Technology area]"
+            count: "[Number of patents]"
+            strategic_value: "[Importance]"
+
+        proprietary_technology:
+          - technology: "[Proprietary tech]"
+            competitive_advantage: "[How this differentiates you]"
+
+        data_assets:
+          - asset: "[Data asset]"
+            scale: "[Volume]"
+            strategic_value: "[Value]"
+
+      human_capital:
+        key_competencies:
+          - competency: "[e.g., AI/ML expertise, Industry domain knowledge]"
+            depth: "[Strength level]"
+            scarcity: "[How rare in market]"
+
+        talent_strategy:
+          recruitment_approach: "[How you attract talent]"
+          retention_metrics:
+            turnover_rate: "[Annual turnover %]"
+            tenure: "[Average employee tenure]"
+
+      financial_resources:
+        cash_position: "[Cash and equivalents if public]"
+        debt_structure: "[Debt levels and structure]"
+        financial_flexibility: "[High/Medium/Low]"
+
+      physical_assets:
+        - asset_type: "[e.g., Data centers, Offices, Equipment]"
+          details: "[Specifics]"
+          strategic_importance: "[Importance]"
+
+    cost_structure:
+      cost_model: "[Fixed-heavy, Variable-heavy, Balanced]"
+
+      major_cost_categories:
+        - category: "Personnel"
+          percentage_of_costs: "[X%]"
+          trend: "[Growing/Stable/Declining]"
+
+        - category: "Infrastructure and Technology"
+          percentage_of_costs: "[X%]"
+          trend: "[Trend]"
+
+        - category: "Sales and Marketing"
+          percentage_of_costs: "[X%]"
+          trend: "[Trend]"
+
+        - category: "Research and Development"
+          percentage_of_costs: "[X%]"
+          trend: "[Trend]"
+
+        # Add other major categories
+
+      economies_of_scale:
+        scale_advantages: "[How scale creates cost advantages]"
+        unit_economics_trend: "[How costs change with scale]"
+
+---
+## 5. PRODUCTS AND SERVICES PORTFOLIO
+
+products_and_services:
+  portfolio_strategy:
+    portfolio_approach: "[e.g., Platform-centric, Best-of-breed suite, Single product]"
+    portfolio_management: "[How products are managed]"
+
+    product_lifecycle_distribution:
+      growth_stage: "[% of revenue from growth products]"
+      mature_stage: "[% from mature products]"
+      harvest_decline: "[% from declining products]"
+
+  platform_architecture:
+    platform_name: "[Core platform name if applicable]"
+    platform_description: "[Overarching platform strategy]"
+
+    platform_layers:
+      - layer: "[e.g., Data layer, Application layer, User experience layer]"
+        description: "[What this layer provides]"
+        technologies: "[Key technologies]"
+
+    modularity_approach: "[How products/modules are componentized]"
+
+    integration_architecture:
+      internal_integration: "[How products integrate with each other]"
+      external_integration: "[How platform integrates with external systems]"
+
+  product_portfolio:
+    # Detailed product breakdown
+
+    flagship_product:
+      product_name: "[Primary product name]"
+      product_category: "[Category - e.g., Enterprise SaaS Platform]"
+
+      strategic_position:
+        market_position: "[Leader/Challenger/Niche in its category]"
+        strategic_importance: "[Why this product matters]"
+        investment_priority: "[High/Medium/Low]"
+
+      description:
+        purpose: "[Core problem solved]"
+        target_users:
+          - user_type: "[User persona 1]"
+            use_case: "[How they use it]"
+          - user_type: "[User persona 2]"
+            use_case: "[Use case]"
+
+        key_capabilities:
+          - capability: "[Capability 1]"
+            differentiation: "[What makes this special]"
+          - capability: "[Capability 2]"
+            differentiation: "[What makes this special]"
+
+      technology_stack:
+        architecture: "[Microservices/Monolithic/Hybrid]"
+        primary_technologies:
+          - "[Technology 1]"
+          - "[Technology 2]"
+        infrastructure: "[Cloud provider, deployment model]"
+        integration_capabilities: "[APIs, events, etc.]"
+
+      customer_segments:
+        - segment: "[Segment name]"
+          penetration: "[% of segment using]"
+          use_case: "[Primary use case]"
+          value_delivered: "[Quantified value]"
+
+      competitive_landscape:
+        direct_competitors:
+          - competitor: "[Competitor name]"
+            their_strength: "[What they do well]"
+            our_advantage: "[How we win]"
+            win_rate: "[% of competitive deals won]"
+
+        competitive_positioning: "[How you position vs. competition]"
+
+      business_metrics:
+        users:
+          total_users: "[User count]"
+          active_users_mau: "[Monthly active users]"
+          growth_rate: "[User growth %]"
+
+        revenue:
+          revenue_contribution: "[Absolute or %]"
+          growth_rate: "[YoY growth %]"
+          average_revenue_per_user: "[ARPU]"
+
+        performance:
+          customer_satisfaction: "[NPS or CSAT score]"
+          retention_rate: "[Annual retention %]"
+          usage_metrics: "[Key usage indicators]"
+
+      product_roadmap:
+        current_version: "[Version]"
+
+        near_term_6_12_months:
+          - initiative: "[Initiative name]"
+            objective: "[Goal]"
+            impact: "[Expected business impact]"
+
+        medium_term_12_24_months:
+          - initiative: "[Initiative]"
+            objective: "[Goal]"
+
+        long_term_vision: "[Where product is heading]"
+
+      technical_debt:
+        known_issues:
+          - issue: "[Technical debt item]"
+            impact: "[Business impact]"
+            remediation_plan: "[Plan to address]"
+
+    # Repeat detailed structure for each major product
+
+  pricing_strategy:
+    pricing_philosophy: "[Value-based, Competitive, Cost-plus, etc.]"
+
+    pricing_models:
+      model_1:
+        model_type: "[e.g., Tiered subscription]"
+        target_segment: "[Who this is for]"
+
+        pricing_tiers:
+          - tier: "[Tier name - e.g., Professional]"
+            target_customer: "[Ideal customer for this tier]"
+            price_range: "[Price range]"
+            key_features:
+              - "[Feature 1]"
+              - "[Feature 2]"
+            typical_customer_profile: "[Description]"
+
+        discounting_approach: "[Standard discount structure]"
+
+        contract_terms:
+          typical_contract_length: "[Duration]"
+          payment_terms: "[Annual/monthly upfront, etc.]"
+
+    pricing_evolution:
+      recent_changes: "[Recent pricing changes and rationale]"
+      planned_changes: "[Upcoming pricing strategy changes]"
+
+  service_delivery_model:
+    delivery_approach: "[Cloud SaaS, Managed service, On-premise, Hybrid]"
+
+    deployment_options:
+      - option: "[e.g., Multi-tenant cloud]"
+        availability: "[Which customers can use]"
+        percentage_using: "[% of customers]"
+
+    implementation_approach:
+      standard_implementation:
+        duration: "[Typical implementation time]"
+        process: "[Implementation methodology]"
+        success_rate: "[% successful implementations]"
+
+      complex_implementation:
+        duration: "[Time for complex deployments]"
+        typical_scope: "[What makes it complex]"
+
+    customer_onboarding:
+      onboarding_process: "[How customers get started]"
+      time_to_value: "[Time from sale to production use]"
+      onboarding_success_rate: "[% who successfully onboard]"
+
+    ongoing_support:
+      support_tiers:
+        - tier: "[e.g., Standard, Premium, Enterprise]"
+          included_in: "[Which pricing tiers]"
+          sla:
+            response_time: "[Response SLA]"
+            resolution_time: "[Resolution SLA]"
+            availability: "[Support hours]"
+          channels:
+            - "[Support channel - e.g., Email, Phone, Portal]"
+
+      customer_success:
+        cs_model: "[How customer success is structured]"
+        coverage: "[Which customers get CSM]"
+        cs_metrics:
+          - metric: "[e.g., Customer health score]"
+            current_performance: "[Performance]"
+
+  product_governance:
+    product_management_approach: "[How products are managed]"
+
+    governance_bodies:
+      - body: "[e.g., Product Council, Architecture Review Board]"
+        role: "[What they decide]"
+        members: "[Who participates]"
+
+    portfolio_review_cadence: "[How often portfolio is reviewed]"
+
+---
+## 6. CUSTOMER SEGMENTS AND MARKETS
+
+customer_segments:
+  segmentation_approach:
+    primary_segmentation: "[How you segment - by size, industry, geography, etc.]"
+    segmentation_maturity: "[How sophisticated is segmentation]"
+
+  detailed_segment_analysis:
+
+    segment_1:
+      segment_name: "[e.g., Global Enterprise]"
+      segment_definition:
+        company_size: "[e.g., 5000+ employees, $1B+ revenue]"
+        industry_focus:
+          - "[Industry 1]"
+          - "[Industry 2]"
+        geographic_focus: "[Global/specific regions]"
+        additional_criteria: "[Other defining characteristics]"
+
+      market_dynamics:
+        segment_size: "[Number of companies in segment]"
+        addressable_market_value: "[TAM for this segment]"
+        our_penetration: "[% penetration or customer count]"
+        market_share: "[Our share of this segment]"
+
+      customer_profile:
+        typical_customer: "[Detailed description]"
+        organizational_maturity: "[Technology and process maturity]"
+        buying_sophistication: "[How sophisticated buyers are]"
+
+        customer_examples:
+          - customer_type: "[e.g., Fortune 500 manufacturers]"
+            count: "[Number of customers]"
+            anonymous_example: "[Description without naming]"
+
+      needs_and_pain_points:
+        primary_challenges:
+          - challenge: "[Challenge 1]"
+            severity: "[High/Medium/Low]"
+            frequency: "[How often encountered]"
+            impact: "[Business impact if unsolved]"
+
+        desired_outcomes:
+          - outcome: "[Outcome 1]"
+            priority: "[High/Medium/Low]"
+            willingness_to_pay: "[How much they value this]"
+
+      how_we_solve:
+        solution_approach: "[Our approach to their problems]"
+
+        key_capabilities_needed:
+          - capability: "[Capability 1]"
+            importance: "[Why critical]"
+            our_strength: "[How strong we are - Strong/Moderate/Developing]"
+
+        value_delivered:
+          quantified_value:
+            - metric: "[e.g., Cost savings]"
+              typical_value: "[Range or average]"
+              proof_points: "[Evidence - case studies, testimonials]"
+
+      buying_behavior:
+        decision_making_unit:
+          economic_buyer: "[Who controls budget]"
+          technical_buyer: "[Who evaluates solution]"
+          end_users: "[Who will use solution]"
+          champions: "[Who advocates internally]"
+
+        decision_criteria:
+          - criterion: "[Criterion 1 - e.g., ROI]"
+            weight: "[Importance - High/Medium/Low]"
+            how_we_stack_up: "[Our performance on this]"
+
+        procurement_process:
+          typical_process: "[RFP, Direct negotiation, Self-service trial, etc.]"
+          process_duration: "[Typical procurement timeline]"
+          complexity: "[High/Medium/Low]"
+
+        sales_cycle:
+          average_length: "[Months from first contact to close]"
+          stages:
+            - stage: "[Stage name]"
+              duration: "[Typical duration]"
+              key_activities: "[What happens]"
+              success_rate: "[% that progress to next stage]"
+
+      customer_economics:
+        average_contract_value: "[ACV for this segment]"
+        customer_lifetime_value: "[CLTV]"
+        customer_acquisition_cost: "[CAC for this segment]"
+        ltv_cac_ratio: "[Ratio]"
+        payback_period: "[Months]"
+
+        expansion_potential:
+          cross_sell_opportunity: "[Potential for additional products]"
+          upsell_opportunity: "[Potential for tier upgrades]"
+          typical_expansion_rate: "[% revenue growth from existing customers]"
+
+      retention_and_satisfaction:
+        retention_metrics:
+          annual_retention_rate: "[%]"
+          churn_rate: "[Annual churn %]"
+          churn_reasons:
+            - reason: "[Churn reason 1]"
+              percentage: "[% of churn]"
+
+        satisfaction_metrics:
+          nps_score: "[Net Promoter Score]"
+          csat_score: "[Customer Satisfaction]"
+          reference_willingness: "[% willing to be references]"
+
+      market_position_in_segment:
+        competitive_strength: "[Strong/Moderate/Weak]"
+        brand_recognition: "[High/Medium/Low]"
+        win_rate: "[% of deals won in this segment]"
+
+        threats_and_opportunities:
+          - type: "[Threat or Opportunity]"
+            description: "[Details]"
+            strategic_response: "[How we address]"
+
+      strategic_importance:
+        importance_level: "[High/Medium/Low]"
+        rationale: "[Why this segment matters strategically]"
+        investment_priority: "[Investment level]"
+        growth_potential: "[High/Medium/Low]"
+
+    # Repeat comprehensive segment analysis for each major segment
+
+  cross_segment_analysis:
+    segment_comparison_matrix:
+      metrics:
+        - metric: "Revenue Contribution"
+          segment_1_value: "[Value]"
+          segment_2_value: "[Value]"
+        - metric: "Growth Rate"
+          segment_1_value: "[%]"
+          segment_2_value: "[%]"
+        - metric: "Profitability"
+          segment_1_value: "[Margin %]"
+          segment_2_value: "[Margin %]"
+
+    portfolio_balance:
+      diversification: "[How diversified is customer base]"
+      concentration_risk: "[Any concentration concerns]"
+
+  geographic_markets:
+    market_by_market_analysis:
+
+      market_1:
+        region: "[e.g., North America, EMEA, APAC]"
+
+        market_characteristics:
+          market_maturity: "[Mature/Growing/Emerging]"
+          market_size: "[TAM in this region]"
+          growth_rate: "[Regional growth %]"
+          regulatory_environment: "[Key regulations]"
+
+        our_presence:
+          revenue_contribution: "[% of total revenue]"
+          customer_count: "[Customers in region]"
+          employee_count: "[Employees in region]"
+          office_locations:
+            - "[City 1]"
+            - "[City 2]"
+
+        competitive_dynamics:
+          local_competitors:
+            - "[Competitor 1]"
+          market_share: "[Our market share]"
+          competitive_position: "[Leader/Challenger/Follower]"
+
+        strategic_importance:
+          importance: "[High/Medium/Low]"
+          rationale: "[Why this market matters]"
+          investment_level: "[Investment priority]"
+
+        go_to_market_approach:
+          sales_model: "[Direct/Channel/Hybrid]"
+          localization_requirements:
+            - "[Requirement 1 - e.g., Language, compliance]"
+
+        challenges_and_opportunities:
+          - type: "[Challenge or Opportunity]"
+            description: "[Details]"
+
+    expansion_strategy:
+      target_markets:
+        - market: "[Geographic market or industry vertical]"
+          rationale: "[Why expand here]"
+          approach: "[How we'll enter]"
+          timeline: "[When]"
+          investment_required: "[Investment level]"
+          success_criteria:
+            - "[Success metric 1]"
+
+  total_addressable_market:
+    market_sizing:
+      methodology: "[How TAM is calculated]"
+
+      current_tam: "[Current market size]"
+      serviceable_available_market: "[SAM - portion we can address]"
+      serviceable_obtainable_market: "[SOM - realistic capture]"
+
+      growth_projections:
+        - year: "[Year]"
+          projected_tam: "[Projection]"
+          assumptions: "[Key assumptions]"
+
+---
+## 7. COMPETITIVE LANDSCAPE
+
+competitive_landscape:
+  market_structure:
+    market_type: "[Consolidated/Fragmented/Emerging/Disrupting]"
+
+    market_dynamics:
+      growth_drivers:
+        - driver: "[Driver 1]"
+          impact: "[Impact on market]"
+
+      market_trends:
+        - trend: "[Trend 1]"
+          implication: "[What this means for us]"
+
+      disruptive_forces:
+        - force: "[e.g., Technology disruption, Regulatory change]"
+          threat_level: "[High/Medium/Low]"
+          our_response: "[How we're responding]"
+
+  competitive_framework:
+    # Using Porter's Five Forces or similar
+
+    rivalry_among_existing_competitors:
+      intensity: "[High/Medium/Low]"
+      factors:
+        - "[Factor 1]"
+      implications: "[What this means]"
+
+    threat_of_new_entrants:
+      threat_level: "[High/Medium/Low]"
+      barriers_to_entry:
+        - barrier: "[Barrier 1]"
+          strength: "[How strong this barrier is]"
+      our_moats: "[What protects us]"
+
+    bargaining_power_of_suppliers:
+      power_level: "[High/Medium/Low]"
+      key_suppliers:
+        - "[Supplier type 1]"
+      mitigation: "[How we manage this]"
+
+    bargaining_power_of_buyers:
+      power_level: "[High/Medium/Low]"
+      factors: "[What gives buyers power]"
+      our_response: "[How we address]"
+
+    threat_of_substitutes:
+      threat_level: "[High/Medium/Low]"
+      substitute_approaches:
+        - approach: "[Alternative approach]"
+          adoption: "[How much adoption]"
+      differentiation: "[How we remain superior]"
+
+  competitor_analysis:
+    # Detailed competitor profiles
+
+    tier_1_competitors:
+      # Major direct competitors
+
+      competitor_1:
+        competitor_name: "[Competitor name]"
+
+        company_profile:
+          type: "[Public/Private/Startup/Incumbent]"
+          size: "[Revenue, employees if known]"
+          ownership: "[Ownership structure]"
+          financial_strength: "[Strong/Moderate/Weak]"
+
+        market_position:
+          market_share: "[Estimated share]"
+          position: "[Leader/Challenger/Follower]"
+          trend: "[Growing/Stable/Declining]"
+
+        strategy:
+          strategic_focus: "[Their strategic direction]"
+          target_markets: "[Markets they focus on]"
+          go_to_market: "[Their GTM approach]"
+
+        products_and_capabilities:
+          product_portfolio:
+            - product: "[Their product]"
+              comparison: "[How it compares to ours]"
+
+          strengths:
+            - strength: "[Strength 1]"
+              impact: "[How this affects competition]"
+              our_counter: "[How we compete against this]"
+
+          weaknesses:
+            - weakness: "[Weakness 1]"
+              our_advantage: "[How we exploit this]"
+
+        competitive_dynamics:
+          win_rate_against: "[% of deals we win vs. them]"
+
+          common_battlegrounds:
+            - battleground: "[Where we compete - e.g., Enterprise manufacturing]"
+              our_position: "[Strong/Moderate/Weak]"
+
+          their_messaging_against_us:
+            - message: "[How they position against us]"
+              our_response: "[Our counter-positioning]"
+
+        strategic_threat:
+          threat_level: "[High/Medium/Low]"
+          threat_areas:
+            - area: "[Specific threat]"
+              mitigation: "[How we address]"
+
+    # Repeat for other major competitors
+
+    tier_2_competitors:
+      # Niche or emerging competitors
+      - competitor: "[Competitor name]"
+        focus: "[Their niche or focus]"
+        threat_level: "[Medium/Low]"
+        watch_areas: "[What to watch]"
+
+    indirect_competitors:
+      # Alternative approaches or substitutes
+      - alternative: "[Alternative approach]"
+        adoption: "[Level of adoption]"
+        when_chosen: "[Why customers choose this instead]"
+
+  our_competitive_positioning:
+    positioning_statement: "[How we position in market]"
+
+    target_competitors:
+      # Who we explicitly position against
+      - competitor: "[Competitor name]"
+        positioning: "[How we differentiate from them]"
+
+    positioning_by_segment:
+      - segment: "[Customer segment]"
+        positioning: "[How we position for this segment]"
+
+  competitive_advantages:
+    # Sustainable competitive advantages
+
+    advantage_1:
+      advantage_title: "[e.g., Technology Leadership]"
+
+      description: "[Detailed explanation of advantage]"
+
+      proof_points:
+        - "[Proof 1 - e.g., Patents, performance metrics]"
+        - "[Proof 2]"
+
+      sustainability:
+        duration: "[How long this advantage can last]"
+        defensibility: "[What protects this advantage]"
+        investment_to_maintain: "[What's required to keep it]"
+
+      business_impact:
+        revenue_impact: "[How this drives revenue]"
+        margin_impact: "[How this affects margins]"
+        customer_acquisition: "[Impact on sales]"
+
+    # Repeat for each major competitive advantage
+
+  competitive_moats:
+    # Barriers that protect our business
+
+    moat_assessment:
+      - moat_type: "[e.g., Network effects, Switching costs, Brand, Scale]"
+        strength: "[Strong/Moderate/Weak]"
+        description: "[How this protects business]"
+        trend: "[Strengthening/Stable/Weakening]"
+        initiatives_to_strengthen:
+          - "[Initiative 1]"
+
+  competitive_intelligence:
+    monitoring_approach: "[How we track competitors]"
+
+    early_warning_indicators:
+      - indicator: "[What we watch - e.g., Pricing changes, product releases]"
+        monitoring_frequency: "[How often]"
+
+    intelligence_sources:
+      - "[Source 1 - e.g., Win/loss analysis, analyst reports]"
+
+  market_share_evolution:
+    historical_share:
+      - year: "[Year]"
+        market_share: "[% share]"
+        rank: "[Position - #1, #2, etc.]"
+
+    share_trajectory: "[Growing/Stable/Declining]"
+    share_gain_initiatives:
+      - "[Initiative to gain share]"
+
+---
+## 8. BUSINESS CAPABILITIES (TOGAF)
+
+business_capabilities:
+  # Enterprise capability model
+
+  capability_framework:
+    methodology: "[How capabilities are defined and managed]"
+    maturity_scale:
+      level_1: "[Initial/Ad-hoc]"
+      level_2: "[Repeatable/Managed]"
+      level_3: "[Defined/Standardized]"
+      level_4: "[Quantitatively Managed]"
+      level_5: "[Optimizing/Innovating]"
+
+  # Hierarchical capability model
+
+  strategy_and_governance_capabilities:
+    domain: "Strategy and Governance"
+
+    capabilities:
+      - capability: "Strategic Planning and Direction Setting"
+        description: "[Capability description]"
+        sub_capabilities:
+          - "Market analysis and insight generation"
+          - "Strategic objective setting"
+          - "Strategic roadmap development"
+
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+        importance_to_strategy: "[High/Medium/Low]"
+
+        capability_assessment:
+          strengths:
+            - "[Strength 1]"
+          gaps:
+            - gap: "[Gap 1]"
+              impact: "[Business impact]"
+
+        technology_enablement:
+          current_tools:
+            - "[Tool 1]"
+          required_capabilities:
+            - "[Required capability]"
+
+        improvement_initiatives:
+          - initiative: "[Initiative to improve capability]"
+            timeline: "[When]"
+            expected_impact: "[Impact]"
+
+      - capability: "Enterprise Architecture Management"
+        description: "[Managing enterprise architecture]"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+        importance_to_strategy: "[High/Medium/Low]"
+
+      - capability: "Governance, Risk, and Compliance"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+      - capability: "Portfolio and Investment Management"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+  customer_and_market_capabilities:
+    domain: "Customer and Market"
+
+    capabilities:
+      - capability: "Market Sensing and Customer Insight"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+        importance_to_strategy: "[High/Medium/Low]"
+
+      - capability: "Customer Relationship Management"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+        sub_capabilities:
+          - "Customer data management"
+          - "Customer segmentation"
+          - "Customer engagement"
+          - "Customer success management"
+
+      - capability: "Marketing and Brand Management"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+      - capability: "Sales and Channel Management"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+  product_and_service_capabilities:
+    domain: "Products and Services"
+
+    capabilities:
+      - capability: "Product Strategy and Portfolio Management"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+      - capability: "Product Development and Innovation"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+        sub_capabilities:
+          - "Product ideation and concept development"
+          - "Product design and engineering"
+          - "Product testing and validation"
+          - "Product launch and lifecycle management"
+
+      - capability: "Service Design and Delivery"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+  operations_and_delivery_capabilities:
+    domain: "Operations and Delivery"
+
+    capabilities:
+      - capability: "Service Delivery and Operations"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+      - capability: "Quality Management"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+      - capability: "Supply Chain Management"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+        applicability: "[N/A if software-only business]"
+
+  technology_and_data_capabilities:
+    domain: "Technology and Data"
+
+    capabilities:
+      - capability: "Enterprise IT Strategy and Planning"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+      - capability: "Application Development and Delivery"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+        sub_capabilities:
+          - "Software engineering"
+          - "DevOps and CI/CD"
+          - "Quality assurance and testing"
+          - "Release management"
+
+      - capability: "Infrastructure and Cloud Management"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+      - capability: "Data Management and Governance"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+      - capability: "Analytics and Business Intelligence"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+      - capability: "Artificial Intelligence and Machine Learning"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+      - capability: "Cybersecurity and Information Protection"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+  enabling_capabilities:
+    domain: "Enabling Functions"
+
+    capabilities:
+      - capability: "Financial Planning and Management"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+      - capability: "Human Capital Management"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+        sub_capabilities:
+          - "Talent acquisition"
+          - "Learning and development"
+          - "Performance management"
+          - "Compensation and benefits"
+
+      - capability: "Legal and Regulatory Compliance"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+      - capability: "Facilities and Asset Management"
+        current_maturity: "[1-5]"
+        target_maturity: "[1-5]"
+
+  capability_heat_map:
+    # Strategic view of capability priorities
+
+    high_priority_investments:
+      # Capabilities needing urgent development
+      - capability: "[Capability name]"
+        current_gap: "[Gap description]"
+        strategic_importance: "[Why critical]"
+        investment_level: "[High/Medium/Low]"
+        timeline: "[When to develop]"
+        expected_impact: "[Business impact]"
+        dependencies:
+          - "[Dependency 1]"
+
+    competitive_differentiators:
+      # Capabilities that set you apart
+      - capability: "[Capability name]"
+        why_differentiating: "[What makes this special]"
+        maintain_investment: "[How to keep advantage]"
+
+    adequate_capabilities:
+      # Capabilities that are good enough
+      - capability: "[Capability name]"
+        why_adequate: "[Why current state is sufficient]"
+
+    potential_outsource_candidates:
+      # Capabilities to consider outsourcing
+      - capability: "[Capability name]"
+        rationale: "[Why consider outsourcing]"
+        considerations: "[What to consider]"
+
+  capability_roadmap:
+    # How capabilities will evolve
+
+    near_term_focus:
+      - capability: "[Capability name]"
+        initiatives:
+          - "[Initiative 1]"
+        investment: "[Budget]"
+        expected_outcome: "[Outcome]"
+
+    medium_term_evolution:
+      - capability: "[Capability name]"
+        transformation_vision: "[How capability will evolve]"
+        enablers:
+          - "[Enabler 1 - e.g., Technology, process, skills]"
+
+---
+## 9. KEY BUSINESS PROCESSES AND VALUE STREAMS
+
+business_processes:
+  # Enterprise process architecture
+
+  process_framework:
+    process_methodology: "[e.g., APQC PCF, TOGAF, Custom]"
+    process_maturity_model: "[Model used - e.g., CMMI]"
+
+    process_governance:
+      process_ownership: "[How processes are owned]"
+      process_review_cadence: "[How often reviewed]"
+      improvement_approach: "[Continuous improvement methodology]"
+
+  core_value_streams:
+    # Critical end-to-end processes
+
+    value_stream_1:
+      stream_name: "[e.g., Lead-to-Revenue, Concept-to-Launch]"
+      strategic_importance: "[High/Medium/Low]"
+
+      description:
+        purpose: "[What this value stream accomplishes]"
+        scope: "[What's included]"
+        customer_value: "[Value delivered to customer]"
+
+      trigger: "[What initiates this value stream]"
+      outcome: "[Successful completion criteria]"
+
+      process_flow:
+        stage_1:
+          stage_name: "[Stage name]"
+          description: "[What happens]"
+          duration: "[Average duration]"
+
+          key_activities:
+            - activity: "[Activity 1]"
+              description: "[Details]"
+
+          roles_involved:
+            - role: "[Role 1]"
+              responsibility: "[What they do]"
+
+          systems_used:
+            - system: "[System 1]"
+              purpose: "[How it's used]"
+
+          inputs:
+            - "[Input 1]"
+
+          outputs:
+            - "[Output 1]"
+
+          decision_points:
+            - decision: "[Decision point]"
+              criteria: "[Decision criteria]"
+              decision_maker: "[Who decides]"
+
+          pain_points:
+            - issue: "[Issue 1]"
+              impact: "[Impact on process]"
+              severity: "[High/Medium/Low]"
+
+        # Repeat for each stage
+
+      performance_metrics:
+        cycle_time:
+          current: "[Current average time]"
+          target: "[Target]"
+          trend: "[Improving/Stable/Degrading]"
+
+        cost_per_instance:
+          current: "[Cost]"
+          target: "[Target]"
+
+        quality_metrics:
+          - metric: "[e.g., Error rate, Rework rate]"
+            current: "[Current]"
+            target: "[Target]"
+
+        volume_metrics:
+          instances_per_year: "[Volume]"
+          growth_rate: "[YoY growth]"
+
+        customer_impact:
+          customer_satisfaction: "[CSAT or NPS for this process]"
+          customer_effort: "[Effort score if measured]"
+
+      process_automation:
+        automation_level: "[% automated]"
+
+        automated_steps:
+          - step: "[Step name]"
+            automation_approach: "[RPA, workflow, etc.]"
+            benefit: "[Benefit gained]"
+
+        automation_opportunities:
+          - opportunity: "[What could be automated]"
+            potential_benefit: "[Expected benefit]"
+            investment_required: "[Investment]"
+
+      improvement_initiatives:
+        current_initiatives:
+          - initiative: "[Initiative name]"
+            objective: "[Goal]"
+            expected_impact: "[Impact]"
+            timeline: "[Timeline]"
+
+        improvement_backlog:
+          - improvement: "[Improvement idea]"
+            priority: "[High/Medium/Low]"
+
+    # Repeat for each critical value stream
+
+  supporting_processes:
+    # Key supporting processes
+
+    process_category_1:
+      category: "[e.g., Financial processes, HR processes]"
+
+      processes:
+        - process_name: "[Process name]"
+          maturity_level: "[1-5]"
+          automation_level: "[Manual/Semi/Automated]"
+          pain_points:
+            - "[Pain point 1]"
+
+  process_architecture:
+    process_hierarchy:
+      level_1_processes:
+        # High-level process groups
+        - "[Process group 1]"
+
+      level_2_processes:
+        # Major processes within groups
+        - group: "[Process group]"
+          processes:
+            - "[Process 1]"
+            - "[Process 2]"
+
+    process_integration:
+      integration_approach: "[How processes integrate]"
+
+      key_integration_points:
+        - integration: "[Integration between processes]"
+          mechanism: "[How they integrate]"
+          criticality: "[High/Medium/Low]"
+
+  process_technology_enablement:
+    process_automation_platforms:
+      - platform: "[e.g., RPA platform, BPM system]"
+        usage: "[What processes it supports]"
+
+    integration_middleware:
+      - middleware: "[Integration platform]"
+        role: "[How it enables processes]"
+
+---
+## 10. TECHNOLOGY LANDSCAPE
+
+technology_landscape:
+  # Enterprise technology environment
+
+  technology_strategy:
+    strategic_direction:
+      primary_strategy: "[e.g., Cloud-first, Digital transformation, Platform-based]"
+
+      strategic_themes:
+        - theme: "[Theme 1 - e.g., Modernization, Consolidation, Innovation]"
+          description: "[What this means]"
+          investment_level: "[High/Medium/Low]"
+
+    technology_principles:
+      # Guiding principles for technology decisions
+
+      - principle: "[Principle 1 - e.g., Cloud-first]"
+        rationale: "[Why this principle]"
+        implications:
+          - "[Implication 1]"
+        exceptions: "[When exceptions allowed]"
+
+      - principle: "[Principle 2 - e.g., Buy before build]"
+        rationale: "[Why]"
+        implications:
+          - "[Implication]"
+
+      # Add all key principles
+
+    technology_governance:
+      governance_bodies:
+        - body: "Enterprise Architecture Review Board"
+          role: "[What they govern]"
+          members: "[Composition]"
+          decision_authority: "[What they decide]"
+          meeting_frequency: "[Cadence]"
+
+        - body: "Technology Investment Committee"
+          role: "[Investment decisions]"
+          decision_threshold: "[e.g., Approves all tech investments >$X]"
+
+        - body: "Security Architecture Board"
+          role: "[Security architecture and standards]"
+
+      technology_standards:
+        standards_documentation: "[Where standards are documented]"
+        standards_compliance: "[How compliance is ensured]"
+        exception_process: "[How to get exceptions]"
+
+  application_portfolio:
+    # Comprehensive application inventory
+
+    portfolio_overview:
+      total_applications: "[Number of applications]"
+
+      portfolio_distribution:
+        by_type:
+          commercial_off_the_shelf: "[Number or %]"
+          custom_developed: "[Number or %]"
+          saas_cloud: "[Number or %]"
+
+        by_lifecycle:
+          strategic_invest: "[% of portfolio]"
+          maintain_operate: "[%]"
+          sunset_retire: "[%]"
+
+        by_health:
+          modern_healthy: "[%]"
+          adequate: "[%]"
+          technical_debt: "[%]"
+          legacy_risk: "[%]"
+
+    enterprise_core_systems:
+      # Mission-critical enterprise systems
+
+      system_1:
+        system_name: "[System name]"
+        system_category: "[ERP, CRM, HCM, etc.]"
+
+        system_details:
+          vendor: "[Vendor name or 'Custom']"
+          product_name: "[Product name if COTS]"
+          version: "[Current version]"
+          deployment_model: "[On-premise/Cloud/SaaS]"
+          hosting_location: "[Where hosted]"
+
+        business_criticality:
+          criticality_level: "[Mission critical/High/Medium/Low]"
+          business_functions_supported:
+            - "[Function 1]"
+            - "[Function 2]"
+          user_base:
+            total_users: "[Number]"
+            user_types:
+              - type: "[User type 1]"
+                count: "[Number]"
+
+        technical_architecture:
+          architecture_style: "[Monolithic/Microservices/SOA]"
+          primary_technologies:
+            - "[Technology 1]"
+          database: "[Database technology]"
+          integration_approach: "[How it integrates]"
+
+        system_health:
+          technical_health: "[Modern/Adequate/Technical debt/Legacy]"
+
+          health_indicators:
+            performance: "[Good/Fair/Poor]"
+            reliability: "[Uptime %]"
+            security_posture: "[Strong/Adequate/Weak]"
+            maintainability: "[Easy/Moderate/Difficult]"
+
+          known_issues:
+            - issue: "[Issue 1]"
+              severity: "[High/Medium/Low]"
+              workaround: "[If any]"
+
+          technical_debt:
+            - debt_item: "[Debt 1]"
+              impact: "[Business impact]"
+              remediation_cost: "[Estimated cost]"
+              remediation_timeline: "[When planned]"
+
+        integration_landscape:
+          inbound_integrations:
+            - source_system: "[System name]"
+              integration_type: "[Real-time/Batch/Event]"
+              data_volume: "[Volume]"
+              criticality: "[High/Medium/Low]"
+
+          outbound_integrations:
+            - target_system: "[System name]"
+              integration_type: "[Type]"
+              criticality: "[Level]"
+
+        vendor_relationship:
+          contract_type: "[License/Subscription/Managed service]"
+          contract_expiry: "[Date]"
+          support_level: "[Support tier]"
+          vendor_health: "[Stable/Concerns/At risk]"
+
+        roadmap:
+          current_state: "[Description]"
+          planned_changes:
+            - change: "[Planned change]"
+              timeline: "[When]"
+              rationale: "[Why]"
+          end_of_life_plan:
+            eol_date: "[If being retired]"
+            replacement: "[Replacement system]"
+
+      # Repeat for each enterprise core system
+
+    business_unit_systems:
+      # Systems specific to BUs
+
+      - business_unit: "[BU name]"
+        key_systems:
+          - system: "[System name]"
+            purpose: "[What it does]"
+            shared_or_bu_specific: "[Shared/BU-specific]"
+
+    shadow_it:
+      shadow_it_approach: "[How organization manages shadow IT]"
+      known_shadow_it_areas:
+        - area: "[Department or use case]"
+          tools_used:
+            - "[Tool 1]"
+          risk_level: "[High/Medium/Low]"
+          remediation_plan: "[If any]"
+
+  technical_architecture:
+    # Enterprise architecture patterns
+
+    architecture_patterns:
+      predominant_style: "[Microservices/SOA/Monolithic/Hybrid]"
+
+      architecture_by_context:
+        new_development: "[Architecture for new systems]"
+        modernization: "[Approach for modernizing legacy]"
+        integration: "[Integration architecture patterns]"
+
+    reference_architectures:
+      - reference_architecture: "[e.g., Standard web application architecture]"
+        description: "[Description]"
+        when_to_use: "[Use cases]"
+        components:
+          - "[Component 1]"
+
+  infrastructure_architecture:
+    infrastructure_strategy: "[Cloud-first/Hybrid/Multi-cloud/On-premise]"
+
+    cloud_environment:
+      cloud_providers:
+        primary_provider:
+          provider: "[e.g., AWS, Azure, GCP]"
+          usage: "[What's hosted here]"
+          spend: "[Annual spend or %]"
+
+          services_used:
+            - service: "[Service 1 - e.g., EC2, S3]"
+              usage: "[How it's used]"
+
+        secondary_providers:
+          - provider: "[Provider name]"
+            usage: "[Why this provider]"
+
+      cloud_architecture:
+        multi_cloud_approach: "[Active-active/Active-passive/Best-of-breed]"
+        cloud_management: "[How clouds are managed]"
+
+        landing_zones:
+          - landing_zone: "[e.g., Production, Development, Security]"
+            purpose: "[Purpose]"
+            account_structure: "[How organized]"
+
+      cloud_migration:
+        migration_status: "[% of workloads in cloud]"
+        migration_approach: "[Lift-shift/Refactor/Rebuild]"
+        remaining_migrations:
+          - workload: "[Workload to migrate]"
+            timeline: "[When]"
+            approach: "[Migration approach]"
+
+    on_premise_infrastructure:
+      # If still applicable
+
+      data_center_strategy: "[Consolidating/Maintaining/Exiting]"
+
+      data_centers:
+        - location: "[Location]"
+          purpose: "[What's hosted]"
+          size: "[Capacity or footprint]"
+          planned_disposition: "[Future plan]"
+
+      hosting_model: "[Owned/Colocation/Managed]"
+
+    network_architecture:
+      network_topology: "[Hub-spoke/Mesh/etc.]"
+
+      connectivity:
+        internet_connectivity: "[Bandwidth, redundancy]"
+        private_connectivity: "[MPLS, SD-WAN, etc.]"
+        cloud_connectivity: "[Direct Connect, ExpressRoute, etc.]"
+
+      network_security:
+        perimeter_security: "[Firewalls, WAF, etc.]"
+        internal_segmentation: "[How network is segmented]"
+        zero_trust_adoption: "[Where on zero trust journey]"
+
+  integration_architecture:
+    integration_strategy: "[API-first/Event-driven/Hybrid]"
+
+    integration_patterns:
+      predominant_patterns:
+        - pattern: "[Pattern 1 - e.g., RESTful APIs, Event streaming]"
+          usage: "[When used]"
+          implementation: "[How implemented]"
+
+    integration_platforms:
+      - platform: "[Platform name - e.g., MuleSoft, Dell Boomi]"
+        usage: "[What integrations it powers]"
+        number_of_integrations: "[Count]"
+
+    api_management:
+      api_gateway: "[Product/platform used]"
+
+      api_portfolio:
+        internal_apis: "[Number of internal APIs]"
+        external_apis: "[Number of public APIs]"
+        partner_apis: "[APIs for partners]"
+
+      api_governance:
+        api_standards: "[API design standards]"
+        api_lifecycle_management: "[How APIs are managed]"
+        api_security: "[API security approach]"
+
+    event_architecture:
+      # If event-driven
+
+      event_platform: "[e.g., Kafka, AWS EventBridge]"
+
+      event_domains:
+        - domain: "[Event domain - e.g., Customer events]"
+          publishers: "[Systems that publish]"
+          subscribers: "[Systems that subscribe]"
+          volume: "[Events per day/month]"
+
+  data_architecture:
+    data_strategy: "[Single source of truth/Data mesh/Federated/etc.]"
+
+    data_architecture_approach:
+      architecture_pattern: "[Centralized warehouse/Data lake/Lake house/Data mesh]"
+
+      data_layers:
+        - layer: "[e.g., Operational data, Analytics, Master data]"
+          description: "[What this layer contains]"
+          technologies: "[Technologies used]"
+
+    primary_databases:
+      - database_type: "[e.g., PostgreSQL, Oracle, MongoDB]"
+        usage: "[What data is stored]"
+        scale: "[Size, transactions]"
+        criticality: "[High/Medium/Low]"
+
+    data_warehouse:
+      platform: "[e.g., Snowflake, Redshift, BigQuery]"
+      size: "[Data volume]"
+      use_cases:
+        - "[Use case 1 - e.g., Financial reporting]"
+
+    data_lake:
+      platform: "[Platform if exists]"
+      data_volume: "[Volume]"
+      data_types:
+        - "[Data type 1]"
+
+    master_data_management:
+      mdm_approach: "[How master data is managed]"
+
+      master_data_domains:
+        - domain: "[e.g., Customer, Product, Location]"
+          golden_record_location: "[System of record]"
+          data_quality: "[Quality level]"
+
+  technology_differentiation:
+    # Technology that creates competitive advantage
+
+    differentiating_capabilities:
+      - capability: "[e.g., Real-time ML in production]"
+        description: "[What makes this special]"
+
+        technology_enablers:
+          - "[Technology 1]"
+
+        business_value: "[How this creates competitive advantage]"
+
+        maturity_level: "[Pilot/Production/Scaled/Industry-leading]"
+
+        investment_to_maintain: "[What's required to keep advantage]"
+
+  technical_debt:
+    # Comprehensive technical debt tracking
+
+    debt_assessment:
+      total_debt_estimate: "[Cost to remediate all debt]"
+      debt_ratio: "[Debt as % of total technology assets]"
+
+    debt_categories:
+      - category: "[e.g., Legacy systems]"
+        description: "[Description]"
+
+        major_debt_items:
+          - item: "[Debt item 1]"
+            system_affected: "[System name]"
+
+            business_impact:
+              agility_impact: "[How this slows us down]"
+              cost_impact: "[Additional operational cost]"
+              risk_impact: "[Business risk]"
+
+            remediation:
+              approach: "[How to fix]"
+              estimated_cost: "[Cost]"
+              estimated_duration: "[Timeline]"
+              priority: "[High/Medium/Low]"
+              planned_timeline: "[When planned]"
+              dependencies:
+                - "[Dependency 1]"
+
+  technology_roadmap:
+    # Strategic technology initiatives
+
+    near_term_initiatives:
+      - initiative: "[Initiative name]"
+        objective: "[Goal]"
+        scope: "[What's included]"
+        business_driver: "[Why doing this]"
+        timeline: "[Start - End]"
+        budget: "[Investment]"
+        expected_outcomes:
+          - "[Outcome 1]"
+
+    medium_term_vision:
+      - transformation: "[Transformation name]"
+        vision: "[Future state]"
+        timeline: "[Timeframe]"
+
+  technology_standards:
+    # Enterprise technology standards
+
+    approved_technologies:
+      # Technologies approved for use
+
+      programming_languages:
+        - language: "[Language 1]"
+          use_cases: "[When to use]"
+          version_standard: "[Required version]"
+
+      frameworks:
+        - framework: "[Framework 1]"
+          use_case: "[When to use]"
+
+      cloud_services:
+        - service: "[Approved cloud service]"
+          use_case: "[When to use]"
+          alternatives: "[Other approved options]"
+
+    prohibited_technologies:
+      - technology: "[Technology to avoid]"
+        reason: "[Why prohibited]"
+        alternative: "[What to use instead]"
+
+  technology_risk_management:
+    technology_risks:
+      - risk: "[Risk 1 - e.g., Technology obsolescence]"
+        description: "[Details]"
+        affected_systems:
+          - "[System 1]"
+        likelihood: "[High/Medium/Low]"
+        impact: "[High/Medium/Low]"
+        mitigation:
+          - "[Mitigation 1]"
+
+---
+## 11. DATA AND ANALYTICS
+
+data_and_analytics:
+  # Enterprise data and analytics strategy
+
+  data_strategy:
+    strategic_vision: "[How data creates value]"
+
+    data_as_asset:
+      valuation_approach: "[How you value data]"
+      strategic_data_assets:
+        - asset: "[Data asset 1]"
+          strategic_value: "[Why valuable]"
+          monetization: "[How monetized if applicable]"
+
+    data_culture:
+      data_literacy: "[High/Medium/Low across organization]"
+      data_driven_decision_making: "[Extent to which data drives decisions]"
+
+      initiatives_to_strengthen:
+        - "[Initiative 1]"
+
+  data_assets:
+    # Comprehensive data asset inventory
+
+    operational_data:
+      - data_domain: "[e.g., Customer data]"
+        description: "[What data]"
+
+        characteristics:
+          volume: "[Records or size]"
+          growth_rate: "[Growth]"
+          velocity: "[Real-time/Near real-time/Batch]"
+          variety: "[Structured/Semi/Unstructured]"
+
+        sources:
+          - "[Source system 1]"
+
+        usage:
+          - use_case: "[Use case 1]"
+            users: "[Who uses it]"
+
+        data_quality:
+          quality_score: "[Score if measured]"
+          quality_issues:
+            - "[Issue 1]"
+          quality_improvement_initiatives:
+            - "[Initiative 1]"
+
+        regulatory_classification: "[PII/PHI/Financial/Public]"
+
+        retention:
+          retention_policy: "[Retention period]"
+          archival_approach: "[How archived]"
+
+  data_capabilities:
+    data_collection:
+      collection_methods:
+        - method: "[Method 1 - e.g., Application events, IoT sensors]"
+          volume: "[Volume]"
+          data_types:
+            - "[Data type 1]"
+
+      data_quality_at_source:
+        validation_approach: "[How data is validated]"
+        error_handling: "[How errors are handled]"
+
+    data_storage:
+      storage_architecture: "[Architecture approach]"
+
+      storage_platforms:
+        - platform: "[Platform 1]"
+          purpose: "[What's stored]"
+          capacity: "[Storage capacity]"
+          cost: "[Storage cost]"
+
+    data_processing:
+      processing_capabilities:
+        - capability: "[e.g., Real-time stream processing]"
+          platform: "[Technology used]"
+          scale: "[Processing capacity]"
+          use_cases:
+            - "[Use case 1]"
+
+      data_pipelines:
+        number_of_pipelines: "[Count]"
+        pipeline_orchestration: "[Orchestration tool]"
+
+        critical_pipelines:
+          - pipeline: "[Pipeline name]"
+            source: "[Source]"
+            destination: "[Destination]"
+            frequency: "[How often]"
+            sla: "[Processing SLA]"
+            criticality: "[High/Medium/Low]"
+
+    analytics_and_intelligence:
+      analytics_maturity: "[Descriptive/Diagnostic/Predictive/Prescriptive]"
+
+      analytics_capabilities:
+        business_intelligence:
+          bi_platform: "[Platform used]"
+
+          bi_usage:
+            users: "[Number of BI users]"
+            dashboards: "[Number of dashboards]"
+            reports: "[Number of reports]"
+
+          key_dashboards:
+            - dashboard: "[Dashboard name]"
+              audience: "[Who uses it]"
+              purpose: "[What it shows]"
+              update_frequency: "[How often updated]"
+
+        advanced_analytics:
+          capabilities:
+            - capability: "[e.g., Predictive modeling, Optimization]"
+              maturity: "[Pilot/Production/Scaled]"
+              use_cases:
+                - "[Use case 1]"
+
+        self_service_analytics:
+          enablement: "[How users enabled to do self-service]"
+          adoption: "[% of target users using self-service]"
+
+  ai_ml_capabilities:
+    ai_strategy:
+      strategic_focus: "[Where AI/ML creates value]"
+      investment_level: "[High/Medium/Low]"
+
+    ai_ml_maturity:
+      overall_maturity: "[Experimenting/Emerging/Established/Leading]"
+
+      maturity_by_area:
+        - area: "[e.g., ML Ops]"
+          maturity: "[Level]"
+
+    production_ml_models:
+      - model_name: "[Model name]"
+        model_type: "[e.g., Classification, Forecasting, Recommendation]"
+
+        business_application:
+          use_case: "[What the model does]"
+          business_process: "[Which process it supports]"
+
+          business_impact:
+            metric: "[Metric improved]"
+            improvement: "[Quantified improvement]"
+
+        technical_details:
+          algorithm_type: "[Algorithm family]"
+          training_data: "[Data used for training]"
+          features: "[Number of features]"
+
+          performance:
+            accuracy_metric: "[Relevant metric - accuracy, precision, etc.]"
+            performance_score: "[Score]"
+
+          deployment:
+            deployment_mode: "[Real-time/Batch/On-demand]"
+            serving_infrastructure: "[How model is served]"
+            predictions_per_day: "[Volume]"
+
+        model_lifecycle:
+          deployment_date: "[When deployed]"
+          retraining_frequency: "[How often retrained]"
+          monitoring: "[How model is monitored]"
+          governance: "[Approval and oversight]"
+
+    ai_ml_platform:
+      platform_components:
+        - component: "[e.g., Feature store, Model registry]"
+          platform: "[Technology used]"
+          purpose: "[What it provides]"
+
+      ml_ops:
+        ml_ops_maturity: "[Manual/Semi-automated/Automated]"
+
+        ml_ops_capabilities:
+          - capability: "[e.g., Automated retraining]"
+            maturity: "[Level]"
+
+    ai_governance:
+      ai_ethics:
+        ethics_framework: "[Framework used if any]"
+
+        ethical_considerations:
+          - consideration: "[e.g., Bias detection and mitigation]"
+            approach: "[How addressed]"
+
+      model_governance:
+        approval_process: "[How models are approved]"
+        model_risk_management: "[How model risk is managed]"
+
+  data_governance:
+    governance_framework:
+      framework_adopted: "[Framework if any - DAMA-DMBOK, etc.]"
+
+      governance_maturity: "[Initial/Developing/Defined/Managed/Optimized]"
+
+    governance_organization:
+      - role: "Chief Data Officer"
+        responsibilities: "[Responsibilities]"
+        reporting: "[Reports to whom]"
+
+      - governance_body: "Data Governance Council"
+        composition: "[Who participates]"
+        responsibilities: "[What they govern]"
+        meeting_frequency: "[Cadence]"
+
+    data_ownership:
+      ownership_model: "[How data ownership is assigned]"
+
+      data_stewards:
+        - domain: "[Data domain]"
+          steward: "[Role or person]"
+          responsibilities: "[What they own]"
+
+    data_quality_management:
+      data_quality_framework: "[Approach to data quality]"
+
+      data_quality_dimensions:
+        - dimension: "[e.g., Accuracy, Completeness, Timeliness]"
+          measurement: "[How measured]"
+          target: "[Target level]"
+
+      data_quality_metrics:
+        overall_quality_score: "[Score if measured]"
+
+        quality_by_domain:
+          - domain: "[Data domain]"
+            quality_score: "[Score]"
+            improvement_trend: "[Trend]"
+
+    metadata_management:
+      metadata_strategy: "[Approach to metadata]"
+
+      metadata_repository:
+        platform: "[Metadata management tool]"
+        coverage: "[% of data assets documented]"
+
+      data_catalog:
+        catalog_platform: "[Tool used]"
+        adoption: "[% of users using catalog]"
+
+    data_privacy_and_protection:
+      privacy_framework: "[Framework used]"
+
+      privacy_compliance:
+        regulations:
+          - regulation: "[e.g., GDPR, CCPA]"
+            applicability: "[Which data/geographies]"
+
+            compliance_controls:
+              - control: "[Control 1]"
+                implementation: "[How implemented]"
+
+            compliance_status: "[Compliant/Gaps/In progress]"
+
+      data_classification:
+        classification_scheme:
+          - classification: "[e.g., Public, Internal, Confidential, Restricted]"
+            criteria: "[Classification criteria]"
+            handling_requirements: "[Requirements for this class]"
+
+        classification_coverage: "[% of data classified]"
+
+      data_protection_controls:
+        - control: "[e.g., Encryption at rest]"
+          coverage: "[Where applied]"
+          standard: "[Encryption standard]"
+
+    data_security:
+      security_controls:
+        - control: "[Control 1]"
+          implementation: "[How implemented]"
+
+      access_management:
+        access_control_model: "[RBAC, ABAC, etc.]"
+        access_review_frequency: "[How often access reviewed]"
+
+    data_retention_and_disposal:
+      retention_policies:
+        - data_type: "[Data type]"
+          retention_period: "[Period]"
+          retention_rationale: "[Why this period]"
+          disposal_method: "[How disposed]"
+
+  data_monetization:
+    monetization_strategy: "[If data is monetized]"
+
+    current_monetization:
+      - approach: "[e.g., Data products, Analytics as a service]"
+        description: "[What's offered]"
+        customers: "[Who buys]"
+        revenue: "[Revenue if disclosed]"
+
+    potential_monetization:
+      - opportunity: "[Opportunity 1]"
+        description: "[What could be offered]"
+        rationale: "[Why valuable]"
+        considerations: "[Privacy, competitive, etc.]"
+
+---
+## 12. ENTERPRISE OPERATING MODEL
+
+operating_model:
+  # How the enterprise operates
+
+  operating_model_framework:
+    model_type: "[Centralized/Decentralized/Federated/Matrix/Network]"
+
+    model_rationale: "[Why this operating model]"
+
+    operating_model_evolution:
+      previous_model: "[If changed recently]"
+      current_model: "[Current state]"
+      transformation_drivers: "[What drove change]"
+      future_direction: "[Where heading]"
+
+  operating_model_dimensions:
+    standardization_vs_customization:
+      approach: "[High standardization/High customization/Balanced]"
+
+      standardization_level:
+        processes: "[High/Medium/Low]"
+        technology: "[High/Medium/Low]"
+        data: "[High/Medium/Low]"
+        reporting: "[High/Medium/Low]"
+
+      customization_allowed:
+        by_business_unit: "[Extent of BU autonomy]"
+        by_geography: "[Regional customization]"
+
+    integration_vs_autonomy:
+      integration_level: "[Tightly integrated/Moderately/Loosely coupled]"
+
+      integration_mechanisms:
+        shared_services: "[Which functions are shared]"
+        centers_of_excellence: "[CoEs that exist]"
+        common_platforms: "[Shared technology platforms]"
+
+      autonomy_by_unit:
+        - unit: "[Business unit]"
+          autonomy_level: "[High/Medium/Low]"
+          areas_of_autonomy:
+            - "[Area 1 - e.g., Technology choices]"
+
+  organizational_design:
+    design_philosophy: "[Design principles]"
+
+    structure_type: "[Functional/Divisional/Matrix/Product-based/etc.]"
+
+    organizational_layers:
+      number_of_layers: "[Count from CEO to frontline]"
+
+      layer_structure:
+        - layer: "[e.g., Executive, Senior management, Middle management]"
+          typical_span_of_control: "[Direct reports]"
+
+    major_organizational_units:
+      - unit: "[Unit name]"
+        type: "[Business unit/Function/Geography]"
+
+        structure:
+          leader: "[Title]"
+          size: "[Employees]"
+          locations: "[Where located]"
+
+        scope:
+          responsibilities:
+            - "[Responsibility 1]"
+          products_services: "[If BU]"
+          geographies: "[If geographic unit]"
+
+        operating_model:
+          autonomy_level: "[High/Medium/Low]"
+
+          decision_rights:
+            strategic: "[What they can decide]"
+            operational: "[Operational autonomy]"
+            technology: "[Tech decision rights]"
+            budget: "[Financial autonomy]"
+
+          shared_services_used:
+            - service: "[Shared service]"
+              model: "[Mandatory/Optional]"
+
+        integration_with_corporate:
+          reporting: "[Reporting relationship]"
+          governance: "[Governance mechanisms]"
+          shared_platforms: "[Platforms they use]"
+
+        performance_management:
+          kpis:
+            - "[KPI 1]"
+          accountability: "[What they're accountable for]"
+
+  decision_rights_and_authority:
+    decision_framework:
+      framework_used: "[e.g., RACI, DACI, RAPID]"
+
+      documentation: "[Where decision rights documented]"
+
+    decision_types:
+      strategic_decisions:
+        decision_maker: "[Who makes strategic decisions]"
+
+        approval_levels:
+          - decision: "[Decision type]"
+            approver: "[Who approves]"
+            threshold: "[e.g., >$X investment]"
+            process: "[Approval process]"
+
+      investment_decisions:
+        capital_allocation: "[Who allocates capital]"
+
+        investment_thresholds:
+          - threshold: "[e.g., <$100K]"
+            authority: "[Who can approve]"
+            process: "[Process]"
+
+      operational_decisions:
+        authority_level: "[Centralized/Decentralized]"
+
+        decision_areas:
+          - area: "[e.g., Hiring]"
+            authority: "[Who decides]"
+
+      technology_decisions:
+        architecture_decisions: "[Who decides architecture]"
+        technology_selection: "[Who approves technology choices]"
+
+        decision_process:
+          - decision_type: "[e.g., Infrastructure choice]"
+            process: "[How decision is made]"
+            approvers: "[Who must approve]"
+
+  governance_structure:
+    board_governance:
+      board_committees:
+        - committee: "[Committee name]"
+          purpose: "[What they oversee]"
+          composition: "[Members]"
+          meeting_frequency: "[Frequency]"
+          key_responsibilities:
+            - "[Responsibility 1]"
+
+    executive_governance:
+      executive_committees:
+        - committee: "[e.g., Executive Leadership Team]"
+          purpose: "[Purpose]"
+          members:
+            - "[Member role 1]"
+          meeting_frequency: "[Frequency]"
+          decision_authority:
+            - "[What they decide]"
+          escalation_path: "[Where they escalate]"
+
+    operational_governance:
+      steering_committees:
+        - committee: "[Committee name]"
+          scope: "[What they govern]"
+          members: "[Composition]"
+          cadence: "[Meeting frequency]"
+
+      working_groups:
+        - group: "[Group name]"
+          purpose: "[Purpose]"
+          duration: "[Permanent/Temporary]"
+
+  collaboration_model:
+    cross_functional_collaboration:
+      collaboration_approach: "[How silos are bridged]"
+
+      collaboration_mechanisms:
+        - mechanism: "[e.g., Cross-functional teams]"
+          usage: "[When used]"
+          effectiveness: "[High/Medium/Low]"
+
+      collaboration_challenges:
+        - challenge: "[Challenge 1]"
+          mitigation: "[How addressed]"
+
+    knowledge_sharing:
+      knowledge_management_approach: "[Approach]"
+
+      knowledge_sharing_platforms:
+        - platform: "[Platform]"
+          usage: "[What it's used for]"
+          adoption: "[Adoption level]"
+
+    communities_of_practice:
+      - community: "[Community name]"
+        focus: "[What they focus on]"
+        members: "[Member count]"
+        activities: "[What they do]"
+
+  work_management:
+    work_planning:
+      planning_cadence:
+        strategic_planning: "[Annual/Other]"
+        operational_planning: "[Quarterly/Other]"
+        tactical_planning: "[Sprint/Other]"
+
+      planning_process:
+        approach: "[Top-down/Bottom-up/Hybrid]"
+        tools: "[Tools used]"
+
+    methodology:
+      primary_methodology: "[Agile/Waterfall/Hybrid]"
+
+      methodology_by_context:
+        product_development: "[Methodology used]"
+        projects: "[Methodology for projects]"
+        operations: "[Operational model]"
+
+      agile_adoption:
+        # If agile
+        adoption_level: "[Enterprise/Selective/Pilot]"
+
+        agile_framework: "[Scrum/SAFe/Custom/etc.]"
+
+        agile_maturity:
+          maturity_level: "[Level]"
+          strengths:
+            - "[Strength 1]"
+          challenges:
+            - "[Challenge 1]"
+
+    prioritization:
+      prioritization_approach: "[How work is prioritized]"
+
+      prioritization_frameworks:
+        - framework: "[e.g., RICE, WSJF, MoSCoW]"
+          usage: "[When used]"
+
+      prioritization_cadence: "[How often priorities reviewed]"
+
+    portfolio_management:
+      portfolio_approach: "[How portfolio is managed]"
+
+      portfolio_segmentation:
+        - segment: "[e.g., Strategic initiatives, BAU, Technical debt]"
+          allocation: "[% of capacity]"
+
+      portfolio_governance:
+        review_cadence: "[How often reviewed]"
+        decision_body: "[Who manages portfolio]"
+
+  performance_management:
+    organizational_performance:
+      performance_measurement: "[How org performance measured]"
+
+      cascading_objectives:
+        approach: "[OKRs/MBOs/Balanced Scorecard/etc.]"
+        cascade_process: "[How objectives cascade]"
+
+    individual_performance:
+      performance_process: "[Annual review/Continuous/Hybrid]"
+
+      performance_criteria:
+        - criterion: "[Criterion 1]"
+          weight: "[Weight %]"
+
+    rewards_and_recognition:
+      compensation_philosophy: "[Philosophy]"
+
+      variable_compensation:
+        eligibility: "[Who eligible]"
+        performance_link: "[How tied to performance]"
+
+---
+## 13. STRATEGIC OBJECTIVES AND INITIATIVES
+
+strategy:
+  # Enterprise strategy
+
+  strategic_planning_approach:
+    planning_methodology: "[Methodology used]"
+    planning_horizon:
+      near_term: "6-12 months"
+      medium_term: "1-3 years"
+      long_term: "3-5+ years"
+
+    planning_cycle:
+      annual_planning: "[Process and timing]"
+      mid_year_review: "[If conducted]"
+      quarterly_adjustments: "[How strategy is adjusted]"
+
+    strategy_development_process:
+      process_description: "[How strategy is developed]"
+      stakeholders_involved:
+        - "[Stakeholder 1]"
+
+      external_input:
+        - input_type: "[e.g., Market analysis, Customer feedback]"
+          source: "[Source]"
+
+  strategic_context:
+    market_opportunity:
+      opportunity_description: "[Market opportunity you're pursuing]"
+      market_drivers:
+        - driver: "[Driver 1]"
+          impact: "[Impact on your business]"
+
+    competitive_positioning:
+      strategic_position: "[How you're positioned]"
+      positioning_rationale: "[Why this position]"
+
+  strategic_objectives:
+    # Major enterprise objectives
+
+    objective_1:
+      objective_title: "[e.g., Achieve Market Leadership in X]"
+
+      objective_details:
+        description: "[Full description]"
+        strategic_rationale: "[Why this objective]"
+
+        timeframe:
+          start: "[Start date]"
+          target_completion: "[Target date]"
+
+        ownership:
+          executive_sponsor: "[Who owns this]"
+          accountable_organization: "[Which org is accountable]"
+
+      success_metrics:
+        - metric: "[Metric 1]"
+          current_baseline: "[Current state]"
+          target_value: "[Target]"
+          target_date: "[When]"
+          measurement_frequency: "[How often measured]"
+
+      key_results:
+        # If using OKR framework
+        - key_result: "[Key result 1]"
+          target: "[Target]"
+          current_progress: "[Progress %]"
+
+      strategic_initiatives:
+        # Major initiatives supporting this objective
+
+        - initiative_name: "[Initiative 1]"
+          description: "[What this initiative is]"
+
+          business_case:
+            investment_required: "[Investment]"
+            expected_return: "[Return]"
+            payback_period: "[Period]"
+
+          scope:
+            scope_description: "[What's included]"
+            out_of_scope: "[What's excluded]"
+
+          timeline:
+            start_date: "[Start]"
+            end_date: "[Target end]"
+
+            key_milestones:
+              - milestone: "[Milestone 1]"
+                date: "[Target date]"
+                status: "[Not started/In progress/Complete]"
+
+          resources:
+            budget: "[Budget]"
+            team_size: "[People]"
+            key_roles:
+              - role: "[Role 1]"
+                status: "[Filled/Open]"
+
+          expected_outcomes:
+            - outcome: "[Outcome 1]"
+              measurement: "[How measured]"
+              target: "[Target value]"
+
+          dependencies:
+            - dependency: "[Dependency 1]"
+              type: "[Upstream/Downstream/External]"
+              status: "[Status]"
+
+          risks:
+            - risk: "[Risk 1]"
+              likelihood: "[High/Medium/Low]"
+              impact: "[High/Medium/Low]"
+              mitigation: "[Mitigation strategy]"
+              owner: "[Risk owner]"
+
+          governance:
+            steering_committee: "[Committee overseeing]"
+            reporting_frequency: "[Reporting cadence]"
+            review_process: "[How progress reviewed]"
+
+      cross_functional_alignment:
+        organizations_involved:
+          - organization: "[Org 1]"
+            role: "[Their role in objective]"
+
+      progress_tracking:
+        current_status: "[On track/At risk/Off track]"
+        progress_percentage: "[% complete]"
+        status_summary: "[Status narrative]"
+
+        last_updated: "[Date]"
+
+    # Repeat comprehensive structure for each strategic objective
+
+  strategic_themes:
+    # Overarching strategic themes
+
+    - theme_name: "[Theme 1 - e.g., Digital Transformation]"
+      description: "[What this theme encompasses]"
+
+      strategic_importance: "[Why this theme matters]"
+
+      priority: "[High/Medium/Low]"
+
+      investment_allocation:
+        total_investment: "[Investment in this theme]"
+        percentage_of_budget: "[% of total strategic investment]"
+
+      objectives_aligned:
+        # Which strategic objectives align
+        - "[Objective 1]"
+
+      success_indicators:
+        - indicator: "[Indicator 1]"
+          current: "[Current state]"
+          target: "[Target]"
+
+  transformation_programs:
+    # Major transformation initiatives
+
+    program_1:
+      program_name: "[Program name]"
+      program_type: "[Digital transformation/Operating model/Technology/etc.]"
+
+      transformation_vision:
+        current_state: "[Where we are]"
+        future_state: "[Where we want to be]"
+        transformation_scope: "[What will change]"
+
+      business_drivers:
+        primary_drivers:
+          - driver: "[Driver 1]"
+            urgency: "[High/Medium/Low]"
+
+      program_structure:
+        program_governance:
+          program_sponsor: "[Executive sponsor]"
+          program_board: "[Governance body]"
+
+        program_organization:
+          program_director: "[Name/role]"
+          workstreams:
+            - workstream: "[Workstream 1]"
+              lead: "[Workstream lead]"
+              scope: "[Scope]"
+
+      timeline_and_roadmap:
+        program_duration: "[Start - End]"
+
+        phases:
+          - phase: "[Phase 1]"
+            duration: "[Timeline]"
+            objectives:
+              - "[Objective 1]"
+            deliverables:
+              - "[Deliverable 1]"
+
+      benefits_realization:
+        target_benefits:
+          - benefit_type: "[Financial/Operational/Customer/etc.]"
+            description: "[Benefit description]"
+            quantification: "[Quantified value]"
+            realization_timeline: "[When realized]"
+
+        benefits_tracking:
+          - benefit: "[Benefit 1]"
+            target: "[Target]"
+            actual: "[Actual if realized]"
+            status: "[On track/At risk/Realized]"
+
+      investment:
+        total_investment: "[Total budget]"
+
+        investment_by_category:
+          - category: "[e.g., Technology, People, Process]"
+            amount: "[Amount]"
+
+      change_management:
+        change_impact:
+          people_impacted: "[Number of people]"
+          impact_level: "[High/Medium/Low]"
+
+        change_approach:
+          change_methodology: "[Methodology used]"
+
+          change_activities:
+            - activity: "[Activity 1 - e.g., Training]"
+              target_audience: "[Who]"
+              timeline: "[When]"
+
+        stakeholder_management:
+          key_stakeholders:
+            - stakeholder: "[Stakeholder or group]"
+              impact: "[How they're impacted]"
+              support_level: "[Supportive/Neutral/Resistant]"
+              engagement_approach: "[How engaging]"
+
+      risks_and_issues:
+        top_risks:
+          - risk: "[Risk 1]"
+            likelihood: "[%]"
+            impact: "[Financial or operational impact]"
+            mitigation: "[Mitigation plan]"
+            owner: "[Risk owner]"
+
+        current_issues:
+          - issue: "[Issue 1]"
+            severity: "[High/Medium/Low]"
+            resolution_plan: "[Plan]"
+
+      success_criteria:
+        - criterion: "[Success criterion 1]"
+          measurement: "[How measured]"
+          target: "[Target]"
+
+  growth_strategy:
+    growth_ambition:
+      growth_target: "[Target - e.g., Double revenue in 5 years]"
+      growth_drivers:
+        - driver: "[Driver 1]"
+          contribution: "[Expected contribution to growth]"
+
+    growth_vectors:
+      market_penetration:
+        approach: "[How increasing share in existing markets]"
+        target: "[Growth target]"
+        initiatives:
+          - "[Initiative 1]"
+
+      market_development:
+        new_markets:
+          - market: "[New geographic or industry market]"
+            rationale: "[Why this market]"
+            approach: "[Entry strategy]"
+            timeline: "[When]"
+            investment: "[Investment required]"
+            revenue_target: "[Revenue target]"
+
+      product_development:
+        new_products:
+          - product: "[New product]"
+            description: "[What it is]"
+            target_market: "[Who it's for]"
+            timeline: "[Launch timeline]"
+            revenue_target: "[Revenue contribution]"
+
+      diversification:
+        # If pursuing new products in new markets
+        - opportunity: "[Opportunity]"
+          rationale: "[Strategic rationale]"
+
+    inorganic_growth:
+      ma_strategy:
+        ma_approach: "[Active acquirer/Opportunistic/Not pursuing]"
+
+        acquisition_criteria:
+          - criterion: "[Criterion 1 - e.g., Technology fit]"
+            description: "[Details]"
+
+        target_profile:
+          target_type: "[Type of targets - products, customers, technology, etc.]"
+          size_range: "[Revenue or valuation range]"
+          geographic_focus: "[Regions]"
+
+        pipeline:
+          active_pipeline: "[Number of opportunities being evaluated]"
+
+          recent_acquisitions:
+            - target: "[Company acquired]"
+              year: "[Year]"
+              rationale: "[Why acquired]"
+              integration_status: "[Status]"
+              performance_vs_plan: "[On track/Ahead/Behind]"
+
+  innovation_strategy:
+    innovation_ambition:
+      innovation_goal: "[What you aim to achieve through innovation]"
+
+      innovation_investment:
+        total_investment: "[R&D spend or innovation budget]"
+        percentage_of_revenue: "[% of revenue]"
+
+    innovation_focus_areas:
+      - focus_area: "[Focus 1 - e.g., AI/ML, New business models]"
+        rationale: "[Why focused here]"
+        investment_level: "[High/Medium/Low]"
+
+        initiatives:
+          - initiative: "[Initiative name]"
+            stage: "[Ideation/Pilot/Scaling]"
+
+    innovation_approach:
+      innovation_model:
+        - approach: "[e.g., Internal R&D]"
+          description: "[How this works]"
+          percentage_of_effort: "[%]"
+
+        - approach: "[e.g., Partnerships]"
+          description: "[Partnership approach]"
+          percentage_of_effort: "[%]"
+
+        - approach: "[e.g., Venture investments]"
+          description: "[Investment approach]"
+          percentage_of_effort: "[%]"
+
+      innovation_process:
+        process_description: "[How ideas move from concept to launch]"
+
+        stage_gates:
+          - stage: "[Stage 1]"
+            criteria: "[Advancement criteria]"
+            decision_maker: "[Who decides]"
+
+    emerging_technologies:
+      technology_radar:
+        - technology: "[Technology 1]"
+          category: "[Assess/Trial/Adopt/Hold]"
+          relevance: "[Why relevant to business]"
+
+          investment_stage:
+            current_stage: "[Exploring/Piloting/Scaling/Mainstream]"
+
+            activities:
+              - activity: "[Activity 1]"
+                status: "[Status]"
+
+          expected_impact:
+            timeframe: "[When impact expected]"
+            impact_areas:
+              - "[Impact area 1]"
+
+  strategic_partnerships:
+    partnership_strategy: "[How partnerships support strategy]"
+
+    strategic_partners:
+      - partner: "[Partner name]"
+        partnership_type: "[Type]"
+        strategic_value: "[Value to strategy]"
+        initiatives:
+          - "[Joint initiative 1]"
+
+---
+## 14. SUCCESS METRICS AND KPIs
+
+# [Continue with expanded metrics section similar to full template but with more depth...]
+
+metrics_and_kpis:
+  measurement_philosophy: "[How measurement drives performance]"
+
+  metric_framework:
+    framework_used: "[e.g., Balanced Scorecard, OKRs, Custom]"
+
+    metric_hierarchy:
+      level_1: "Enterprise-level KPIs"
+      level_2: "Business unit KPIs"
+      level_3: "Department/team KPIs"
+      level_4: "Individual KPIs"
+
+    cascading_approach: "[How metrics cascade]"
+
+  financial_metrics:
+    - metric: "Annual Revenue"
+      definition: "[How calculated]"
+      current: "[Current value]"
+      previous_year: "[Previous value]"
+      target: "[Target]"
+      trend: "[Growing X%/Stable/Declining]"
+      owner: "[Who owns this metric]"
+      reporting_frequency: "[Quarterly/Monthly]"
+
+    - metric: "Revenue Growth Rate (YoY)"
+      current: "[Current %]"
+      target: "[Target %]"
+      trend: "[Trend]"
+
+    - metric: "Gross Margin"
+      current: "[Current %]"
+      target: "[Target %]"
+
+      margin_by_segment:
+        - segment: "[Segment 1]"
+          margin: "[%]"
+
+    - metric: "Operating Margin / EBITDA"
+      current: "[Current %]"
+      target: "[Target %]"
+
+    - metric: "Earnings Per Share (EPS)"
+      # If public company
+      current: "[Current]"
+      target: "[Target]"
+
+    - metric: "Free Cash Flow"
+      current: "[Current]"
+      target: "[Target]"
+
+    - metric: "Return on Invested Capital (ROIC)"
+      current: "[Current %]"
+      target: "[Target %]"
+
+  customer_metrics:
+    - metric: "Number of Customers"
+      current: "[Current count]"
+      target: "[Target]"
+      growth_rate: "[YoY growth %]"
+
+      by_segment:
+        - segment: "[Segment 1]"
+          count: "[Count]"
+
+    - metric: "Customer Acquisition Cost (CAC)"
+      current: "[Current value]"
+      target: "[Target]"
+
+      by_segment:
+        - segment: "[Segment 1]"
+          cac: "[Value]"
+
+      trend: "[Trend]"
+
+    - metric: "Customer Lifetime Value (CLTV)"
+      current: "[Current value]"
+      target: "[Target]"
+
+    - metric: "CLTV:CAC Ratio"
+      current: "[Ratio]"
+      target: "[Target ratio]"
+      benchmark: "[Industry benchmark if known]"
+
+    - metric: "Customer Satisfaction (NPS)"
+      current_nps: "[Score]"
+      target: "[Target]"
+
+      nps_by_segment:
+        - segment: "[Segment 1]"
+          nps: "[Score]"
+
+      promoters_percentage: "[%]"
+      detractors_percentage: "[%]"
+
+    - metric: "Customer Retention Rate"
+      current: "[Annual retention %]"
+      target: "[Target %]"
+
+      retention_by_segment:
+        - segment: "[Segment 1]"
+          retention: "[%]"
+
+    - metric: "Net Revenue Retention (NRR)"
+      # Especially for SaaS
+      current: "[%]"
+      target: "[Target %]"
+
+    - metric: "Churn Rate"
+      current: "[Annual churn %]"
+      target: "[Target %]"
+
+      churn_reasons:
+        - reason: "[Reason 1]"
+          percentage: "[% of churn]"
+
+  operational_metrics:
+    - metric: "Transaction Volume"
+      current: "[Current volume]"
+      target: "[Target]"
+      growth_rate: "[%]"
+
+    - metric: "System Uptime / Availability"
+      current: "[Current %]"
+      target: "[Target - e.g., 99.9%]"
+
+      by_system:
+        - system: "[Critical system 1]"
+          uptime: "[%]"
+          sla: "[SLA target]"
+
+    - metric: "Mean Time to Resolution (MTTR)"
+      current: "[Hours/minutes]"
+      target: "[Target]"
+
+    - metric: "Processing Time / Throughput"
+      current: "[Current value]"
+      target: "[Target]"
+
+  product_metrics:
+    - metric: "Active Users"
+      daily_active_users: "[DAU]"
+      monthly_active_users: "[MAU]"
+
+      dau_mau_ratio: "[Ratio]"
+
+      growth_rate: "[%]"
+      target: "[Target]"
+
+    - metric: "Feature Adoption Rate"
+      # For new features
+      - feature: "[Feature name]"
+        adoption_rate: "[%]"
+        target: "[Target %]"
+
+    - metric: "Product Quality"
+      defect_rate: "[Defects per release]"
+      incident_count: "[Monthly incidents]"
+      target: "[Target]"
+
+  employee_metrics:
+    - metric: "Employee Count"
+      current: "[Count]"
+      growth_rate: "[%]"
+
+      by_function:
+        - function: "[Function]"
+          count: "[Count]"
+
+    - metric: "Employee Engagement Score"
+      current: "[Score]"
+      target: "[Target]"
+      measurement_approach: "[Survey tool/method]"
+
+    - metric: "Employee Turnover"
+      voluntary_turnover: "[Annual %]"
+      involuntary_turnover: "[%]"
+      target: "[Target %]"
+
+      by_function:
+        - function: "[Function]"
+          turnover: "[%]"
+
+    - metric: "Time to Fill Open Positions"
+      current: "[Days]"
+      target: "[Target days]"
+
+    - metric: "Employee Net Promoter Score (eNPS)"
+      current: "[Score]"
+      target: "[Target]"
+
+  strategic_initiative_metrics:
+    # Metrics for strategic initiatives
+
+    - initiative: "[Initiative name]"
+      kpis:
+        - kpi: "[KPI 1]"
+          current: "[Current]"
+          target: "[Target]"
+          status: "[On track/At risk/Off track]"
+
+  metric_governance:
+    metric_ownership:
+      - metric: "[Metric name]"
+        owner: "[Owner role]"
+        data_source: "[Where data comes from]"
+        calculation_method: "[How calculated]"
+        reporting_frequency: "[Frequency]"
+
+    data_quality:
+      accuracy_threshold: "[Required accuracy]"
+      validation_process: "[How data is validated]"
+
+    reporting:
+      reporting_cadence:
+        board_reporting: "[Frequency]"
+        executive_reporting: "[Frequency]"
+        operational_reporting: "[Frequency]"
+
+      reporting_tools:
+        - tool: "[BI tool]"
+          usage: "[What's reported]"
+
+  north_star_metric:
+    metric: "[The ONE metric that matters most]"
+
+    rationale: "[Why this metric]"
+
+    current_value: "[Current]"
+    target_value: "[Target]"
+
+    drivers:
+      - driver: "[Driver 1 that influences North Star]"
+        current: "[Current]"
+        target: "[Target]"
+
+---
+## 15. CONSTRAINTS AND REQUIREMENTS
+
+constraints_and_requirements:
+  # Enterprise-level constraints
+
+  regulatory_and_compliance:
+    compliance_framework:
+      framework_approach: "[How compliance is managed enterprise-wide]"
+
+      compliance_organization:
+        chief_compliance_officer: "[Name/role]"
+        compliance_team_size: "[Size]"
+
+      compliance_monitoring:
+        monitoring_approach: "[How compliance is monitored]"
+        audit_frequency: "[Internal and external audit frequency]"
+
+    regulations:
+      # Comprehensive regulation coverage
+
+      regulation_1:
+        regulation_name: "[e.g., GDPR]"
+
+        applicability:
+          geographic_scope: "[EU/Global/etc.]"
+          data_types_affected: "[PII, etc.]"
+          business_units_affected:
+            - "[BU 1]"
+          systems_affected:
+            - "[System 1]"
+
+        requirements:
+          - requirement: "[Requirement 1 - e.g., Data subject rights]"
+            implementation: "[How implemented]"
+            systems_involved:
+              - "[System 1]"
+
+          - requirement: "[Requirement 2 - e.g., Data breach notification]"
+            implementation: "[Implementation approach]"
+            process: "[Process description]"
+
+        compliance_status:
+          status: "[Fully compliant/Gaps identified/Remediation in progress]"
+
+          gaps:
+            - gap: "[Gap description]"
+              severity: "[High/Medium/Low]"
+              remediation_plan: "[Plan]"
+              remediation_timeline: "[Timeline]"
+
+          last_audit: "[Date]"
+          audit_findings: "[Summary]"
+
+        implications_for_ai_development:
+          - implication: "[e.g., All customer data processing must be GDPR compliant]"
+            requirement: "[Specific technical requirement]"
+
+        penalties_for_non_compliance:
+          maximum_penalty: "[Penalty]"
+          reputation_impact: "[Impact description]"
+
+      # Repeat for each major regulation
+
+    industry_standards:
+      - standard: "[e.g., PCI-DSS]"
+        applicability: "[Where applies]"
+        certification_status: "[Certified/In process]"
+        requirements:
+          - "[Requirement 1]"
+        recertification_date: "[Date]"
+
+  security_requirements:
+    security_framework:
+      framework_adopted: "[e.g., NIST CSF, ISO 27001]"
+
+      security_maturity:
+        overall_maturity: "[Level]"
+        maturity_by_area:
+          - area: "[e.g., Identity and access management]"
+            maturity: "[Level]"
+
+    security_organization:
+      chief_information_security_officer: "[Name/role]"
+      security_team_size: "[Size]"
+
+      security_governance:
+        security_board: "[Governance body]"
+        meeting_frequency: "[Frequency]"
+
+    security_classification:
+      classification_scheme:
+        - level: "[e.g., Public]"
+          handling_requirements: "[Requirements]"
+        - level: "[e.g., Internal]"
+          handling_requirements: "[Requirements]"
+        - level: "[e.g., Confidential]"
+          handling_requirements: "[Requirements]"
+        - level: "[e.g., Restricted]"
+          handling_requirements: "[Requirements]"
+
+    security_controls_required:
+      # Mandated security controls
+
+      - control_category: "Identity and Access Management"
+        controls:
+          - control: "[e.g., Multi-factor authentication]"
+            applicability: "[All users/Admin users/etc.]"
+            implementation: "[How implemented]"
+            exceptions: "[Any exceptions]"
+
+      - control_category: "Data Protection"
+        controls:
+          - control: "Encryption at rest"
+            standard: "[Encryption standard - e.g., AES-256]"
+            applicability: "[What data must be encrypted]"
+
+          - control: "Encryption in transit"
+            standard: "[TLS 1.2+]"
+            applicability: "[All data transmission]"
+
+      - control_category: "Network Security"
+        controls:
+          - control: "[Control 1]"
+            implementation: "[Implementation]"
+
+      - control_category: "Application Security"
+        controls:
+          - control: "[e.g., Secure SDLC]"
+            requirements:
+              - "[Requirement 1]"
+
+    data_protection:
+      data_protection_requirements:
+        - requirement: "PII Protection"
+          definition: "[What constitutes PII]"
+
+          protection_measures:
+            - measure: "[Measure 1]"
+              mandatory: "[Yes/No]"
+
+          retention: "[Retention policy]"
+          disposal: "[Disposal method]"
+
+        - requirement: "Data Residency"
+          requirements:
+            - data_type: "[Data type]"
+              residency_requirement: "[Must remain in EU/etc.]"
+              rationale: "[Regulatory/Performance/etc.]"
+
+    security_incident_management:
+      incident_response_plan: "[Where documented]"
+
+      incident_classification:
+        - severity: "[Critical]"
+          definition: "[Definition]"
+          response_time: "[Required response time]"
+          notification_requirements:
+            - "[Who must be notified]"
+
+      recent_incidents:
+        major_incidents_past_year: "[Count]"
+        lessons_learned:
+          - "[Lesson 1]"
+
+  performance_requirements:
+    performance_slas:
+      - service: "[Service or system]"
+        sla_type: "[Availability/Response time/etc.]"
+        sla_target: "[e.g., 99.9% uptime]"
+        measurement_period: "[How measured]"
+        penalties: "[Penalties for missing SLA]"
+        current_performance: "[Actual performance]"
+
+  scalability_requirements:
+    current_scale:
+      users: "[Current user count]"
+      transactions: "[Transaction volume]"
+      data_volume: "[Data volume]"
+
+    growth_projections:
+      - metric: "[Metric - e.g., User count]"
+        current: "[Current]"
+        year_1: "[Projection]"
+        year_2: "[Projection]"
+        year_3: "[Projection]"
+
+    scalability_needs:
+      - system: "[System name]"
+        current_capacity: "[Current]"
+        required_capacity_3_years: "[Requirement]"
+        scalability_approach: "[Horizontal/Vertical/etc.]"
+
+  integration_requirements:
+    integration_standards:
+      - standard: "[e.g., All integrations must use OAuth 2.0]"
+        rationale: "[Why]"
+        applicability: "[Where applies]"
+
+    required_integrations:
+      # Systems that must be integrated with
+
+      - system: "[System name]"
+        integration_type: "[Real-time/Batch/Event-driven]"
+        integration_pattern: "[API/File transfer/etc.]"
+        data_volume: "[Volume]"
+        frequency: "[How often]"
+        criticality: "[Must-have/Should-have]"
+
+        technical_constraints:
+          - constraint: "[e.g., Must use specific API version]"
+            reason: "[Why]"
+
+  budget_constraints:
+    budget_governance:
+      budget_approval_process: "[How budgets are approved]"
+
+      approval_thresholds:
+        - threshold: "[Amount]"
+          approver: "[Who approves]"
+
+    typical_project_budgets:
+      small_projects: "[Budget range]"
+      medium_projects: "[Budget range]"
+      large_projects: "[Budget range]"
+
+    budget_constraints_by_type:
+      capital_budget: "[Annual capital budget]"
+      operating_budget: "[Annual opex budget]"
+
+      it_budget:
+        total_it_budget: "[Total]"
+
+        budget_allocation:
+          - category: "[e.g., Infrastructure]"
+            percentage: "[%]"
+            amount: "[Amount]"
+
+  timeline_constraints:
+    typical_timelines:
+      regulatory_driven_projects: "[Timeline expectation]"
+      strategic_initiatives: "[Timeline]"
+      business_as_usual: "[Timeline]"
+
+    time_to_market_pressure:
+      pressure_level: "[High/Medium/Low]"
+
+      drivers:
+        - driver: "[Driver of urgency]"
+          impact: "[Impact]"
+
+  technology_constraints:
+    approved_technologies:
+      technology_standards_location: "[Where documented]"
+
+      standard_stack:
+        languages:
+          - language: "[Language]"
+            version: "[Required version]"
+            use_cases: "[When to use]"
+
+        frameworks:
+          - framework: "[Framework]"
+            version: "[Version]"
+            use_cases: "[Use cases]"
+
+        cloud_services:
+          - service: "[Service]"
+            provider: "[Provider]"
+            use_case: "[Use case]"
+
+        databases:
+          - database: "[Database]"
+            version: "[Version]"
+            use_case: "[When to use]"
+
+    prohibited_technologies:
+      - technology: "[Technology]"
+        reason: "[Why prohibited]"
+        alternative: "[Approved alternative]"
+
+    technology_decision_process:
+      new_technology_approval:
+        process: "[How new technologies are approved]"
+        approval_body: "[Who approves]"
+        criteria:
+          - "[Criterion 1]"
+
+  organizational_constraints:
+    resource_constraints:
+      - constraint_type: "[e.g., Limited specialized skills]"
+        details: "[Specific constraint]"
+        impact: "[How this constrains projects]"
+        mitigation: "[How addressed]"
+
+    change_capacity:
+      change_saturation: "[High/Medium/Low]"
+      change_fatigue_level: "[Level]"
+
+      implications: "[How this affects new initiatives]"
+
+  user_experience_requirements:
+    ux_standards:
+      - standard: "[e.g., Mobile-first design]"
+        rationale: "[Why required]"
+        applicability: "[All customer-facing/etc.]"
+
+    accessibility_requirements:
+      accessibility_standard: "[WCAG 2.1 AA/etc.]"
+      compliance_requirement: "[Mandatory/Recommended]"
+
+    localization_requirements:
+      - language: "[Language]"
+        markets: "[Where required]"
+        priority: "[Must-have/Should-have]"
+
+---
+## 16. STAKEHOLDERS AND DECISION MAKERS
+
+stakeholders:
+  stakeholder_governance:
+    stakeholder_management_approach: "[How stakeholders are identified and managed]"
+    raci_framework: "[How RACI/RAPID is used]"
+
+  stakeholder_matrix:
+    executive_stakeholders:
+      - name: "[Name]"
+        role: "[Title]"
+        business_unit: "[BU]"
+        interest_areas:
+          - "[Interest 1]"
+        influence_level: "[High/Medium/Low]"
+        decision_authority:
+          - decision_type: "[Budget/Architecture/Strategy]"
+            threshold: "[e.g., >$1M requires approval]"
+        communication_preference: "[Frequency and format]"
+        success_criteria: "[What they measure success by]"
+
+    business_unit_stakeholders:
+      - business_unit: "[BU Name]"
+        key_stakeholders:
+          - name: "[Name]"
+            role: "[Title]"
+            interest: "[Primary interest]"
+            influence: "[High/Medium/Low]"
+
+    technical_stakeholders:
+      - name: "[Name or role]"
+        role: "[Title]"
+        domain: "[Technical domain]"
+        interest: "[What they care about]"
+        influence: "[High/Medium/Low]"
+        technical_authority: "[What they approve]"
+
+    external_stakeholders:
+      - organization: "[Organization name]"
+        type: "[Customer/Partner/Regulator/Investor]"
+        relationship_owner: "[Internal owner]"
+        interest: "[What they care about]"
+        influence: "[High/Medium/Low]"
+        engagement_approach: "[How we engage them]"
+
+  decision_making_framework:
+    decision_types:
+      - decision_type: "Strategic Direction"
+        decision_maker: "[Who decides]"
+        consulted: "[Who is consulted]"
+        informed: "[Who is informed]"
+        escalation_path: "[If no consensus]"
+
+      - decision_type: "Major Investment (>$X)"
+        decision_maker: "[Who decides]"
+        approval_process: "[Process description]"
+        required_artifacts: "[What's needed]"
+
+      - decision_type: "Architecture Decisions"
+        decision_maker: "[ARB or equivalent]"
+        criteria: "[Evaluation criteria]"
+        documentation: "[ADR or equivalent]"
+
+      - decision_type: "Technology Selection"
+        decision_maker: "[Who decides]"
+        criteria: "[Selection criteria]"
+        process: "[Selection process]"
+
+  change_management:
+    change_readiness: "[High/Medium/Low]"
+    change_fatigue_level: "[Low/Medium/High]"
+
+    change_champions:
+      - name: "[Name]"
+        role: "[Role]"
+        influence_area: "[Where they have influence]"
+
+    change_resistance_areas:
+      - area: "[Area of resistance]"
+        reason: "[Why resistant]"
+        mitigation: "[How to address]"
+
+---
+## 17. PARTNERSHIPS AND ECOSYSTEM
+
+partnerships_and_ecosystem:
+  ecosystem_strategy:
+    ecosystem_vision: "[Strategic vision for partnerships]"
+    partnership_philosophy: "[Build vs partner vs buy]"
+    ecosystem_governance: "[How partnerships are governed]"
+
+  partnership_categories:
+    strategic_alliances:
+      - partner_name: "[Partner]"
+        partnership_type: "[Technology/Go-to-market/Joint venture]"
+        strategic_importance: "[Critical/High/Medium]"
+
+        relationship_details:
+          started: "[Year]"
+          contract_term: "[Duration]"
+          renewal_date: "[Date]"
+          executive_sponsor: "[Internal sponsor]"
+          partner_manager: "[Day-to-day owner]"
+
+        value_exchange:
+          what_we_provide: "[Our contribution]"
+          what_we_receive: "[Their contribution]"
+          joint_value_created: "[Combined value]"
+
+        integration_depth:
+          technical: "[Tight/Moderate/Loose/None]"
+          commercial: "[Revenue sharing, etc.]"
+          operational: "[Process integration]"
+
+        performance:
+          revenue_generated: "[Revenue from partnership]"
+          strategic_objectives_met: "[Objectives achieved]"
+          health_score: "[Red/Yellow/Green]"
+
+        dependencies:
+          - dependency: "[What we depend on them for]"
+            criticality: "[High/Medium/Low]"
+            alternative: "[Alternative if partnership ends]"
+
+        risks:
+          - risk: "[Partnership risk]"
+            mitigation: "[How addressed]"
+
+    technology_partners:
+      - partner: "[Technology vendor]"
+        category: "[Cloud/Software/Hardware/Services]"
+        products_used: "[Products we use]"
+        spend: "[Annual spend]"
+        contract_status: "[Active/Renewal due/Negotiating]"
+        strategic_importance: "[Critical/High/Medium/Low]"
+        alternative_vendors: "[Alternatives considered]"
+
+    channel_partners:
+      - partner_type: "[Resellers/Distributors/Integrators]"
+        partner_count: "[Number of partners]"
+        revenue_through_channel: "[% of revenue]"
+        partner_program: "[Partner program name]"
+        geographic_coverage: "[Regions covered]"
+
+    implementation_partners:
+      - partner: "[SI or consultant]"
+        specialization: "[What they do for us]"
+        engagement_model: "[Project/Retainer/Managed service]"
+        relationship_health: "[Status]"
+
+  vendor_management:
+    critical_vendors:
+      - vendor: "[Vendor name]"
+        service: "[Service provided]"
+        criticality: "[Business critical/Important/Standard]"
+        contract_value: "[Annual value]"
+        contract_end: "[End date]"
+        risk_assessment: "[Risk level]"
+        business_continuity: "[Plan if vendor fails]"
+
+    vendor_governance:
+      governance_approach: "[How vendors are managed]"
+      vendor_review_cadence: "[Review frequency]"
+      performance_metrics: "[How measured]"
+
+---
+## 18. RISK FACTORS AND CHALLENGES
+
+risks_and_challenges:
+  enterprise_risk_framework:
+    risk_management_approach: "[ERM framework used]"
+    risk_appetite_statement: "[Overall risk appetite]"
+    risk_governance:
+      chief_risk_officer: "[Name/role]"
+      risk_committee: "[Governance body]"
+      reporting_cadence: "[How often reported]"
+
+  risk_register:
+    strategic_risks:
+      - risk_id: "[RISK-001]"
+        risk_name: "[Risk name]"
+        description: "[Detailed description]"
+        category: "[Strategic/Operational/Financial/Compliance]"
+
+        assessment:
+          likelihood: "[1-5 scale]"
+          impact: "[1-5 scale]"
+          risk_score: "[Calculated score]"
+          trend: "[Increasing/Stable/Decreasing]"
+
+        ownership:
+          risk_owner: "[Who owns this risk]"
+          business_unit: "[Affected BU]"
+
+        mitigation:
+          current_controls: "[Existing controls]"
+          control_effectiveness: "[Effective/Partially effective/Ineffective]"
+          additional_mitigations: "[Planned actions]"
+          residual_risk: "[After mitigation]"
+
+        monitoring:
+          key_risk_indicators:
+            - indicator: "[KRI]"
+              threshold: "[Warning level]"
+              current_value: "[Current]"
+          review_frequency: "[How often reviewed]"
+
+    operational_risks:
+      - risk_id: "[RISK-010]"
+        risk_name: "[e.g., Key person dependency]"
+        # ... similar structure
+
+    technology_risks:
+      - risk_id: "[RISK-020]"
+        risk_name: "[e.g., Cybersecurity breach]"
+        # ... similar structure
+
+    compliance_risks:
+      - risk_id: "[RISK-030]"
+        risk_name: "[e.g., Regulatory non-compliance]"
+        # ... similar structure
+
+    emerging_risks:
+      - risk: "[Emerging risk]"
+        description: "[Why this is emerging]"
+        potential_impact: "[Potential impact]"
+        monitoring_approach: "[How we're watching it]"
+
+  current_challenges:
+    business_challenges:
+      - challenge: "[Current challenge]"
+        description: "[Details]"
+        impact: "[Business impact]"
+        priority: "[High/Medium/Low]"
+        owner: "[Who's addressing]"
+        resolution_approach: "[How being addressed]"
+        expected_resolution: "[Timeline]"
+
+    technology_challenges:
+      - challenge: "[Tech challenge]"
+        description: "[Details]"
+        impact: "[Impact]"
+        root_cause: "[Why this exists]"
+        resolution_plan: "[Plan]"
+
+---
+## 19. ORGANIZATIONAL CULTURE
+
+organizational_culture:
+  culture_assessment:
+    culture_archetype: "[Innovative/Operational/Customer-centric/Results-driven]"
+
+    cultural_values:
+      stated_values:
+        - value: "[Stated value 1]"
+          description: "[What it means]"
+          observed_behavior: "[How it manifests]"
+
+      lived_values:
+        - value: "[What people actually prioritize]"
+          evidence: "[Observable evidence]"
+
+    cultural_strengths:
+      - strength: "[Cultural strength]"
+        business_benefit: "[How it helps]"
+        preservation_approach: "[How to maintain]"
+
+    cultural_challenges:
+      - challenge: "[Cultural challenge]"
+        business_impact: "[How it hurts]"
+        change_approach: "[How to address]"
+
+  communication_culture:
+    communication_style: "[Direct/Diplomatic/Formal/Informal]"
+    meeting_culture: "[Meeting-heavy/Async-first/Balanced]"
+    documentation_culture: "[Thorough/Minimal/As-needed]"
+
+    communication_channels:
+      - channel: "[e.g., Email, Slack, Teams]"
+        usage: "[What it's used for]"
+        effectiveness: "[Works well/Could improve]"
+
+  innovation_culture:
+    innovation_encouragement: "[How innovation is fostered]"
+    risk_tolerance: "[High/Medium/Low]"
+    failure_handling: "[How failures are treated]"
+    experimentation_support: "[Support for experiments]"
+
+    innovation_blockers:
+      - blocker: "[What inhibits innovation]"
+        impact: "[Effect]"
+        mitigation: "[How to address]"
+
+  collaboration_patterns:
+    cross_functional_collaboration: "[Easy/Moderate/Challenging]"
+    silo_level: "[Low/Medium/High]"
+    collaboration_tools: "[Tools used]"
+
+    collaboration_challenges:
+      - challenge: "[Collaboration challenge]"
+        between: "[Teams/BUs involved]"
+        resolution: "[How being addressed]"
+
+  change_culture:
+    change_velocity: "[Fast/Moderate/Slow]"
+    change_acceptance: "[High/Medium/Low]"
+    transformation_history: "[Track record with change]"
+
+---
+## 20. AI DEVELOPMENT CONTEXT
+
+ai_development_context:
+  enterprise_ai_strategy:
+    ai_vision: "[Strategic vision for AI]"
+    ai_maturity: "[Nascent/Developing/Advanced/Leading]"
+
+    ai_governance:
+      ai_governance_body: "[Who governs AI]"
+      ai_ethics_framework: "[Ethics approach]"
+      ai_policy: "[AI usage policy]"
+
+    ai_investment:
+      current_investment: "[Current AI spend]"
+      planned_investment: "[Future investment]"
+      investment_focus_areas:
+        - "[Focus area 1]"
+
+  current_ai_capabilities:
+    production_ai:
+      - capability: "[AI capability in production]"
+        use_case: "[Business use case]"
+        technology: "[Tech used]"
+        maturity: "[Pilot/Production/Scaled]"
+        business_value: "[Value delivered]"
+        owner: "[Owning team]"
+
+    ai_infrastructure:
+      ml_platforms: "[ML platforms used]"
+      data_infrastructure: "[Data infrastructure for AI]"
+      compute_resources: "[AI compute resources]"
+      model_management: "[How models are managed]"
+
+  ai_driven_development:
+    adoption_level: "[Current adoption of AI in development]"
+
+    tools_and_platforms:
+      - tool: "[AI development tool]"
+        usage: "[How used]"
+        adoption: "[Widely/Partially/Pilot]"
+
+    methodology:
+      approach: "[e.g., BMad, Custom, Hybrid]"
+      governance: "[How AI-developed code is governed]"
+      review_requirements: "[What requires human review]"
+
+    success_metrics:
+      - metric: "[How AI development success is measured]"
+        current: "[Current value]"
+        target: "[Target]"
+
+  ai_constraints:
+    ethical_constraints:
+      - constraint: "[Ethical boundary]"
+        policy: "[Governing policy]"
+
+    technical_constraints:
+      - constraint: "[Technical limitation]"
+        implication: "[Impact on AI use]"
+
+    regulatory_constraints:
+      - constraint: "[Regulatory requirement]"
+        regulation: "[Source regulation]"
+        implication: "[How it affects AI use]"
+
+---
+## 21. LESSONS LEARNED
+
+lessons_learned:
+  institutional_knowledge:
+    successful_patterns:
+      - pattern: "[What worked well]"
+        context: "[When/where]"
+        why_successful: "[Success factors]"
+        when_to_apply: "[Applicability]"
+        evidence: "[Proof points]"
+
+    failure_patterns:
+      - pattern: "[What didn't work]"
+        context: "[When/where]"
+        why_failed: "[Root cause]"
+        lesson: "[What was learned]"
+        prevention: "[How to avoid]"
+
+  organizational_preferences:
+    architecture_preferences:
+      - preference: "[Architecture preference]"
+        rationale: "[Why preferred]"
+        exceptions: "[When not applicable]"
+
+    technology_preferences:
+      - preference: "[Technology preference]"
+        rationale: "[Why preferred]"
+        approved_alternatives: "[Alternatives if needed]"
+
+    process_preferences:
+      - preference: "[Process preference]"
+        rationale: "[Why preferred]"
+
+    vendor_preferences:
+      - preference: "[Vendor preference]"
+        rationale: "[Why preferred]"
+
+  known_anti_patterns:
+    - anti_pattern: "[What to avoid]"
+      context: "[Where learned]"
+      consequences: "[What happened]"
+      better_approach: "[Recommended alternative]"
+
+  project_retrospectives:
+    key_learnings:
+      - learning: "[Key learning from projects]"
+        source: "[Which project/program]"
+        applicability: "[Where to apply]"
+
+---
+## 22. FUTURE VISION
+
+future_vision:
+  enterprise_vision:
+    vision_statement: "[Long-term vision - 5-10 years]"
+    vision_timeframe: "[Target year]"
+
+    vision_pillars:
+      - pillar: "[Vision pillar]"
+        description: "[What this means]"
+        success_indicators:
+          - "[Indicator 1]"
+
+  transformation_roadmap:
+    transformation_waves:
+      - wave: "Wave 1"
+        timeframe: "[Years]"
+        focus: "[Transformation focus]"
+        key_initiatives:
+          - "[Initiative 1]"
+        expected_outcomes:
+          - "[Outcome 1]"
+
+      - wave: "Wave 2"
+        timeframe: "[Years]"
+        focus: "[Focus]"
+        key_initiatives:
+          - "[Initiative 1]"
+
+  future_business_model:
+    envisioned_changes:
+      - change: "[Business model change]"
+        rationale: "[Why]"
+        timeline: "[When]"
+
+    new_revenue_streams:
+      - stream: "[Potential new revenue]"
+        opportunity_size: "[Size estimate]"
+        investment_required: "[Investment]"
+        probability: "[Likelihood]"
+
+    market_expansion:
+      - market: "[Target market]"
+        entry_timeline: "[When]"
+        entry_strategy: "[How]"
+
+  technology_vision:
+    target_architecture: "[Future state architecture]"
+
+    emerging_technology_bets:
+      - technology: "[Emerging tech]"
+        strategic_relevance: "[Why important]"
+        investment_stage: "[Watching/Exploring/Piloting/Scaling]"
+        expected_impact: "[Anticipated impact]"
+
+    technology_sunset:
+      - technology: "[Tech to retire]"
+        retirement_timeline: "[When]"
+        replacement: "[What replaces it]"
+
+  organizational_evolution:
+    target_operating_model: "[Future operating model]"
+    organizational_changes:
+      - change: "[Organizational change]"
+        rationale: "[Why]"
+        timeline: "[When]"
+
+    capability_development:
+      - capability: "[Future capability]"
+        current_state: "[Where we are]"
+        target_state: "[Where we want to be]"
+        development_approach: "[How to get there]"
+
+  market_position_aspiration:
+    target_position: "[Desired market position]"
+    brand_aspiration: "[How we want to be perceived]"
+    competitive_aspiration: "[Competitive goals]"
+
+---
+## ENTERPRISE APPENDICES
+
+appendices:
+  appendix_a_glossary:
+    # Enterprise-specific terms
+    - term: "[Term 1]"
+      definition: "[Definition]"
+      context: "[How used in organization]"
+
+  appendix_b_organizational_chart:
+    org_chart_location: "[Where to find detailed org chart]"
+    last_updated: "[Date]"
+
+  appendix_c_technology_inventory:
+    inventory_location: "[CMDB or inventory system]"
+
+    major_systems_summary:
+      total_applications: "[Count]"
+      by_category:
+        - category: "[Category]"
+          count: "[Count]"
+
+  appendix_d_compliance_matrix:
+    # Mapping of regulations to controls
+    matrix_location: "[Where compliance matrix is maintained]"
+
+  appendix_e_architecture_artifacts:
+    # Reference to architecture documentation
+    - artifact: "Enterprise Architecture Repository"
+      location: "[Location]"
+      description: "[What's documented]"
+
+---
+# END OF ENTERPRISE TEMPLATE
+
+# ENTERPRISE TEMPLATE COMPLETION GUIDANCE:
+#
+# Estimated Time: 16-40 hours depending on organizational complexity
+#
+# Recommended Approach:
+# 1. Executive sponsor assigns EA lead
+# 2. Gather existing documentation (strategy docs, architecture, compliance)
+# 3. Interview key stakeholders across BUs
+# 4. Fill Priority 1 sections first (Sections 1, 4, 5, 10, 15)
+# 5. Expand with BU-specific detail
+# 6. Review with governance bodies
+# 7. Validate with compliance and security
+# 8. Publish and socialize
+# 9. Establish quarterly update cadence
+#
+# Complexity Considerations:
+# - Multi-BU organizations: Document each BU's unique aspects
+# - Multi-geography: Address regional variations
+# - Complex compliance: Detail all applicable regulations
+# - Large app portfolio: May need separate application catalog
+# - M&A activity: Document integration status
+#
+# This enterprise template serves as comprehensive business context for:
+# - AI-driven development aligned with enterprise architecture
+# - Ensuring solutions fit into enterprise technology landscape
+# - Respecting enterprise governance and compliance
+# - Leveraging enterprise capabilities and avoiding duplication
+# - Aligning with enterprise strategy and transformation programs
